@@ -13,6 +13,9 @@ sudo cat <<EOF > /etc/NetworkManager/conf.d/dhcp-client.conf
 dhcp=dhclient
 EOF
 
+# Synchronise the system clock across the network
+sudo systemctl enable systemd-timesyncd.service
+
 # Enable firewall and deny all by default
 # NB: All packages that require access through the firewall
 # will need to be allowed.
