@@ -13,3 +13,6 @@ PKGS=(
 )
 
 sudo pacman -S "${PKGS[@]}" --needed
+
+# Begin printing configuration
+./712-printing-setup.sh
