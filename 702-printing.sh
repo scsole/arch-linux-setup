@@ -7,9 +7,9 @@
 PKGS=(
     'cups'                  # The CUPS Printing System
     'cups-pdf'              # PDF printer for CUPS
-    'system-config-printer' # Printer configuration tool
+    'gutenprint'            # Printer drivers
+    'foomatic-db-gutenprint-ppds'   # Prebuilt ppd files
+    'system-config-printer' # Printer configuration tool and status applet
+)
 
 sudo pacman -S "${PKGS[@]}" --needed
-
-# Begin printing configuration
-./712-printing-setup.sh
