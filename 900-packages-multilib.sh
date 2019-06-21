@@ -16,6 +16,9 @@ PKGS=(
     # Audio Components
     'lib32-libpulse'        # PulseAudio sound server
     'lib32-alsa-plugins'    # ALSA configuration for PulseAudio
+
+    # Utilities
+    'steam'                 # Steam
 )
 
 sudo pacman -S "${PKGS[@]}" --needed

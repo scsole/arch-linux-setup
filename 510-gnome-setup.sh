@@ -11,3 +11,4 @@ sudo systemctl enable gdm.service
 # - TopIcons Plus
 # - Caffeine
 # - Dash to Dock
+# - Lock Keys

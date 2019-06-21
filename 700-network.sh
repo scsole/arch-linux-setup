@@ -12,11 +12,6 @@ PKGS=(
 
     # Firewall
     'ufw'                   # Uncomplicated Firewall
-
-    # Resource sharing
-    'openssh'               # Remote login with the SSH protocol
-    'sshfs'                 # SSH File Transfer Protocol
-    'nfs-utils'             # Support programs for Network File Systems
 )
 
 sudo pacman -S "${PKGS[@]}" --needed
