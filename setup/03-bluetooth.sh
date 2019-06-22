@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #
-# Bluetooth Configuration
+# Bluetooth Setup
 #
 
-# Enable bluetooth on boot
+# Enable Bluetooth
 sudo systemctl enable bluetooth.service

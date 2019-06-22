@@ -1,11 +1,10 @@
 #!/bin/bash
 
 #
-# Audio Components
+# Audio
 #
 
 PKGS=(
-    # Network manager
     'alsa-utils'            # Advanced Linux Sound Architecture (ALSA)
     'alsa-plugins'          # Extra ALSA plugins
     'pulseaudio'            # PulseAudio sound server
@@ -13,4 +12,5 @@ PKGS=(
     'pamixer'               # Command-line mixer for PulseAudio
 )
 
+# Install audio packages
 sudo pacman -S "${PKGS[@]}" --needed

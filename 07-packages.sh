@@ -9,6 +9,7 @@ PKGS=(
     'bash-completion'       # Tab completion for Bash
     'curl'                  # Retrive remote content
     'htop'                  # Interactive process viewer
+    'light'                 # Change brightness on backlight-controllers
     'mlocate'               # File searching utility
     'neofetch'              # Display system information
     'openssh'               # Remote login with the SSH protocol

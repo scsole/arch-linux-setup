@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #
-# Printing Configuration
+# Printer Setup
 #
 
-# Enable CUPS socket on boot
+# Enable CUPS socket
 sudo systemctl enable org.cups.cupsd.socket

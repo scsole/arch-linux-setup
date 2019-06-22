@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #
-# Network Configuration
+# Network Setup
 #
 
-# Enable NetworkManager on boot
+# Enable NetworkManager
 sudo systemctl enable NetworkManager.service
 
 # Change the DHCP client

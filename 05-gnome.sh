@@ -16,7 +16,8 @@ PKGS=(
     'gnome-usage'           # View information about system resources
 )
 
+# Install GNOME packages
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin GNOME configuration
-./510-gnome-setup.sh
+# Begin GNOME setup
+./setup/05-gnome.sh

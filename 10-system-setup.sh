@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# System Configuration
+# System Setup
 #
 
 # Enable periodic trim (weekly)

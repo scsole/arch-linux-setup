@@ -1,16 +1,17 @@
 #!/bin/bash
 
 #
-# Bluetooth Components
+# Bluetooth
 #
 
 PKGS=(
-    'bluez'                 # Daemons for the bluetooth protocol stack
+    'bluez'                 # Daemons for the Bluetooth protocol stack
     'bluez-utils'           # Utilities for the Bluetooth protocol stack
     'pulseaudio-bluetooth'  # PulseAudio Bluetooth support
 )
 
+# Install Bluetooth packages
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin bluetooth configuration
-./711-bluetooth-setup.sh
+# Begin Bluetooth setup
+./setup/03-bluetooth.sh

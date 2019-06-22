@@ -16,7 +16,8 @@ PKGS=(
     'vulkan-intel'          # Intel's Vulkan mesa driver
 )
 
+# Install Xorg packages
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin Xorg configuration
-./410-xorg-setup.sh
+# Begin Xorg setup
+./setup/xorg.sh

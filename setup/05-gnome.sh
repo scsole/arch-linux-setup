@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #
-# GNOME Configuration
+# GNOME Setup
 #
 
 # Start GDM on boot
 sudo systemctl enable gdm.service
 
-# Gnome extensions
-# - TopIcons Plus
+# TODO: Gnome extensions
 # - Caffeine
 # - Dash to Dock
 # - Lock Keys
+# - TopIcons Plus

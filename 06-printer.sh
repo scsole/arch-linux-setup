@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Printing Components
+# Printer
 #
 
 PKGS=(
@@ -12,7 +12,8 @@ PKGS=(
     'system-config-printer' # Printer configuration tool and status applet
 )
 
+# Install printer packages
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin printing configuration
-./712-printing-setup.sh
+# Begin printer setup
+./setup/06-printer.sh

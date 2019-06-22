@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #
-# Xorg Configuration
+# Xorg Setup
 #
 
-# Intel xorg config
+# Intel Xorg config
 sudo cat <<EOF > /etc/X11/xorg.conf.d/20-intel.conf
 Section "Device"
     Identifier  "Intel Graphics"
