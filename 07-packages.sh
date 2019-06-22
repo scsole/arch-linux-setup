@@ -14,7 +14,6 @@ PKGS=(
     'neofetch'              # Display system information
     'openssh'               # Remote login with the SSH protocol
     'rsync'                 # Sync remote files
-    'tlp'                   # Linux Advanced Power Management
     'tree'                  # Directory listing program
     'vim'                   # A highly configurable text editor
     'wget'                  # Retrive remote content
