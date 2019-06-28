@@ -9,6 +9,7 @@ sudo systemctl enable gdm.service
 
 # TODO: Gnome extensions
 # - Caffeine
-# - Dash to Dock
-# - Lock Keys
-# - TopIcons Plus
+# - Dash to Dock:       gnome-shell-extension-dash-to-dock
+# - Impatience          gnome-shell-extension-impatience-git
+# - Lock Keys:          gnome-shell-extension-lockkeys-git
+# - TopIcons Plus:      gnome-shell-extension-topicons-plus

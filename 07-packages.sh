@@ -35,11 +35,10 @@ PKGS=(
     'firefox'               # Mozilla's Web browser
     'filezilla'             # FTP, FTPS, and SFTP Client
     'gufw'                  # Firewall manager
-    'transmission-gtk'      # BitTorrent client (GTK)
+    'transmission-qt'       # BitTorrent client
 
     # Productivity
     'hunspell'              # Spellchecker
-    'hunspell-en_AU'        # AU English spellcheck dictionaries
     'hunspell-en_GB'        # GB English spellcheck dictionaries
     'hunspell-en_US'        # US English spellcheck dictionaries
     'hyphen'                # Hyphenation rules

@@ -8,7 +8,7 @@
 sudo systemctl enable NetworkManager.service
 
 # Change the DHCP client
-sudo cat <<EOF > /etc/NetworkManager/conf.d/dhcp-client.conf
+sudo tee /etc/NetworkManager/conf.d/dhcp-client.conf <<EOF
 [main]
 dhcp=dhclient
 EOF

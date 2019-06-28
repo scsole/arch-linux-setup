@@ -14,10 +14,11 @@ PKGS=(
     'xf86-video-intel'      # Intel video drivers
     'mesa'                  # Open-source implementation of OpenGL
     'vulkan-intel'          # Intel's Vulkan mesa driver
+    'vulkan-icd-loader'     # Vulkan Installable Client Driver
 )
 
 # Install Xorg packages
 sudo pacman -S "${PKGS[@]}" --needed
 
 # Begin Xorg setup
-./setup/xorg.sh
+./setup/04-xorg.sh

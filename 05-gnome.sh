@@ -13,7 +13,6 @@ PKGS=(
     'gnome-multi-writer'    # Write ISO files to USB devices
     'gnome-sound-recorder'  # Simple audio recording
     'gnome-tweaks'          # GNOME Tweak Tool
-    'gnome-usage'           # View information about system resources
 )
 
 # Install GNOME packages

@@ -16,6 +16,7 @@ PKGS=(
 
     # Development
     'visual-studio-code-bin'    # Text editor
+    'github-desktop'        # GUI for managing Git and GitHub
 
     # Communication
     'discord'               # Voice and text chat for gamers

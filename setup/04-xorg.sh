@@ -5,7 +5,7 @@
 #
 
 # Intel Xorg config
-sudo cat <<EOF > /etc/X11/xorg.conf.d/20-intel.conf
+sudo tee /etc/X11/xorg.conf.d/20-intel.conf <<EOF
 Section "Device"
     Identifier  "Intel Graphics"
     Driver      "intel"
@@ -13,7 +13,7 @@ EndSection
 EOF
 
 # Pointer libinput configuration
-sudo cat <<EOF > /etc/X11/xorg.conf.d/30-pointer.conf
+sudo tee /etc/X11/xorg.conf.d/30-pointer.conf <<EOF
 Section "InputClass"
     Identifier "pointer"
     Driver "libinput"
@@ -24,7 +24,7 @@ EndSection
 EOF
 
 # Touchpad libinput configuration
-sudo cat <<EOF > /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo tee /etc/X11/xorg.conf.d/30-touchpad.conf <<EOF
 Section "InputClass"
     Identifier "touchpad"
     Driver "libinput"
