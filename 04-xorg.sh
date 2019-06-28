@@ -13,6 +13,7 @@ PKGS=(
     # Display drivers
     'xf86-video-intel'      # Intel video drivers
     'nvidia'                # NVIDIA drivers for linux
+    'nvidia-settings'       # Tool for configuring the NVIDIA graphics driver
     'mesa'                  # Open-source implementation of OpenGL
     'vulkan-intel'          # Intel's Vulkan mesa driver
     'vulkan-icd-loader'     # Vulkan Installable Client Driver
