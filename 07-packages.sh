@@ -7,13 +7,16 @@
 PKGS=(
     # Terminal Utilities
     'bash-completion'       # Tab completion for Bash
+    'cpupower'              # Utilities to assist with CPU frequency scaling
     'curl'                  # Retrive remote content
     'htop'                  # Interactive process viewer
+    'i7z'                   # Intel i7 CPU reporting tool
     'light'                 # Change brightness on backlight-controllers
     'mlocate'               # File searching utility
     'neofetch'              # Display system information
     'openssh'               # Remote login with the SSH protocol
     'rsync'                 # Sync remote files
+    'tlp'                   # Linux Advanced Power Management
     'tree'                  # Directory listing program
     'vim'                   # A highly configurable text editor
     'wget'                  # Retrive remote content

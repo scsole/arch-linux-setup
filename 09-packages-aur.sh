@@ -11,6 +11,9 @@ cd pikaur
 makepkg -fsri
 
 PKGS=(
+    # Terminal Utilities
+    'thermald'              # The Linux Thermal Daemon program from 01.org
+
     # General Utilities
     'enpass-bin'            # Multiplatform password manager
 

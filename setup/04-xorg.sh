@@ -4,14 +4,6 @@
 # Xorg Setup
 #
 
-# Intel Xorg config
-sudo tee /etc/X11/xorg.conf.d/20-intel.conf <<EOF
-Section "Device"
-    Identifier  "Intel Graphics"
-    Driver      "intel"
-EndSection
-EOF
-
 # Pointer libinput configuration
 sudo tee /etc/X11/xorg.conf.d/30-pointer.conf <<EOF
 Section "InputClass"
