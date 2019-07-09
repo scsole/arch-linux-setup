@@ -6,12 +6,10 @@
 
 PKGS=(
     'gnome'                 # The base GNOME desktop and applications
-    'gdm'                   # GNOME Display Manager
+    'gdm-prime'             # GNOME Display Manager patched with PRIME support
 
     # Further GNOME applications
     'evolution'             # Email client
-    'gnome-multi-writer'    # Write ISO files to USB devices
-    'gnome-sound-recorder'  # Simple audio recording
     'gnome-tweaks'          # GNOME Tweak Tool
 )
 

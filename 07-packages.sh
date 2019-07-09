@@ -9,6 +9,7 @@ PKGS=(
     'bash-completion'       # Tab completion for Bash
     'cpupower'              # Utilities to assist with CPU frequency scaling
     'curl'                  # Retrive remote content
+    'ffmpegthumbs'          # Thumbnail creator for video files
     'htop'                  # Interactive process viewer
     'i7z'                   # Intel i7 CPU reporting tool
     'light'                 # Change brightness on backlight-controllers

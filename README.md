@@ -1,6 +1,6 @@
 # Arch Linux Post-installation Setup
-My post-installation Arch Linux setup scripts.
+My Arch Linux post-installation and setup scripts.
 
-These scripts install my preferred packages and configure the system. This is not intended to be an Arch Linux [installation guide](https://wiki.archlinux.org/index.php/Installation_guide) or installation script.
+These scripts install a collection of packages and perform some configuration. This is not intended to be an Arch Linux [installation guide](https://wiki.archlinux.org/index.php/Installation_guide) or installation script.
 
-Some of the packages and configuration options are for my particular system. You should check everything before running these scripts yourself. (You wouldn't run any script without knowing what's inside it first, would you?)
+Some of the packages and configuration options are for my particular system. You should check the contents of these scripts running them yourself. You wouldn't just run any script without knowing what's inside it first, would you?
