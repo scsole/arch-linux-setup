@@ -6,4 +6,3 @@
 
 # Start SDDM on boot
 sudo systemctl enable sddm.service
-
