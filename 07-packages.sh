@@ -34,6 +34,7 @@ PKGS=(
     'git'                   # Distributed version control system
     'jdk-openjdk'           # Java development kit
     'python'                # Python scripting language
+    'rxvt-unicode'          # Terminal emulator
 
     # Network and Internet
     'firefox'               # Mozilla's Web browser
@@ -57,6 +58,7 @@ PKGS=(
 
     # Fonts
     'noto-fonts'
+    'ttf-font-awesome'
     'ttf-liberation'
     'ttf-ubuntu-font-family'
     'ttf-hack'
