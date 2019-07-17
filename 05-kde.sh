@@ -23,7 +23,7 @@ PKGS=(
     'kwalletmanager'        # Wallet management tool
     'okular'                # Document Viewer
     'spectacle'             # KDE screenshot capture utility
-
+    'latte-dock'            # A dock based on Plasma Frameworks
 )
 
 # Install KDE packages

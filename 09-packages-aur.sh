@@ -16,6 +16,7 @@ PKGS=(
 
     # General Utilities
     'enpass-bin'            # Multiplatform password manager
+    'optimus-manager-qt'    # Qt interface for Optimus Manager
 
     # Development
     'visual-studio-code-bin'    # Text editor
