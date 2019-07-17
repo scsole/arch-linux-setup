@@ -51,6 +51,7 @@ PKGS=(
     'libmythes'             # Thesaurus
     'mythes-en'             # English thesaurus
     'libreoffice-fresh'     # LibreOffice
+    'thunderbird'           # Email client
 
     # Media
     'ffmpeg'                # Record, convert, and stream media
@@ -62,6 +63,10 @@ PKGS=(
     'ttf-liberation'
     'ttf-ubuntu-font-family'
     'ttf-hack'
+
+    # Other
+    'appmenu-gtk-module'    # Application Menu GTK+ Module
+    'libdbusmenu-glib'      # Library for passing menus over DBus
 )
 
 sudo pacman -S "${PKGS[@]}" --needed

@@ -18,12 +18,12 @@ PKGS=(
     'kcalc'                 # Scientific Calculator
     'kfind'                 # Find Files/Folders
     'kgpg'                  # A GnuPG frontend
-    'kmail'                 # KDE mail client
     'konsole'               # KDE's terminal emulator
     'kwalletmanager'        # Wallet management tool
     'okular'                # Document Viewer
     'spectacle'             # KDE screenshot capture utility
     'latte-dock'            # A dock based on Plasma Frameworks
+    'packagekit-qt5'        # Arch Linux repositories in Discover
 )
 
 # Install KDE packages
