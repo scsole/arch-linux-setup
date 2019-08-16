@@ -4,30 +4,32 @@
 # Arch User Repository (AUR) Packages
 #
 
-# Download and install AUR helper
+printf "\nDownloading and Installing AUR Helper\n\n"
 cd
 git clone https://aur.archlinux.org/pikaur.git
 cd pikaur
 makepkg -fsri
 
 PKGS=(
-    # Terminal Utilities
-    'thermald'              # The Linux Thermal Daemon program from 01.org
+	# Terminal Utilities
+	'thermald'					# The Linux Thermal Daemon program from 01.org
 
-    # General Utilities
-    'enpass-bin'            # Multiplatform password manager
-    'optimus-manager-qt'    # Qt interface for Optimus Manager
+	# General Utilities
+	'enpass-bin'				# Multiplatform password manager
+	'optimus-manager-qt'		# Qt interface for Optimus Manager
 
-    # Development
-    'visual-studio-code-bin'    # Text editor
-    'github-desktop'        # GUI for managing Git and GitHub
+	# Development
+	'visual-studio-code-bin'	# Text editor
+	'github-desktop-bin'		# GUI for managing Git and GitHub
 
-    # Communication
-    'discord'               # Voice and text chat for gamers
-    'signal'                # Private messenger
+	# Communication
+	'discord'					# Voice and text chat for gamers
+	'signal'					# Private messenger
 
-    # Fonts
-    'steam-fonts'
+	# Fonts
+	#'steam-fonts'
 )
 
+printf "\nInstalling AUR Packages\n\n"
+pikaur -Syu
 pikaur -S "${PKGS[@]}" --needed

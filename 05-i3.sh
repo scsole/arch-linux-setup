@@ -5,12 +5,17 @@
 #
 
 PKGS=(
-    'i3'                    # i3wm with 
-    'dmenu'                 # Application launcher
+	'i3-gaps'					# i3wm with gaps
+	'i3blocks'					# Define blocks for i3bar
+	'i3lock'					# Screenlocker
+	'i3status'					# Generates a status bar for i3bar
+	'dmenu'						# Application launcher
 )
 
-# Install i3 packages
+printf "\nInstalling i3 Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin i3 setup
+printf "\nConfiguring i3\n\n"
 ./setup/05-i3.sh
+
+printf "\ni3 Components Done! \n\n"

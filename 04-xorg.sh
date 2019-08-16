@@ -5,22 +5,24 @@
 #
 
 PKGS=(
-    # Xorg display server
-    'xorg-server'           # Xorg X server
-    'xorg-apps'             # Additional packages for configuration
-    'xorg-xinit'            # Xorg initialisation program
+	# Xorg display server
+	'xorg-server'				# Xorg X server
+	'xorg-apps'					# Additional packages for configuration
+	'xorg-xinit'				# Xorg initialisation program
 
-    # Display drivers
-    'xf86-video-intel'      # Intel video drivers
-    'nvidia'                # NVIDIA drivers for linux
-    'nvidia-settings'       # Tool for configuring the NVIDIA graphics driver
-    'mesa'                  # Open-source implementation of OpenGL
-    'vulkan-intel'          # Intel's Vulkan mesa driver
-    'vulkan-icd-loader'     # Vulkan Installable Client Driver
+	# Display drivers
+	'xf86-video-intel'			# Intel video driver
+	'mesa'						# Open-source OpenGL implementation
+	'nvidia'					# NVIDIA video driver
+	'nvidia-settings'			# Tool for configuring the NVIDIA graphics driver
+#	'vulkan-intel'				# Intel's Vulkan mesa driver
+#	'vulkan-icd-loader'			# Vulkan Installable Client Driver
 )
 
-# Install Xorg packages
+printf "\nInstalling Xorg Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin Xorg setup
+printf "\nConfiguring Xorg\n\n"
 ./setup/04-xorg.sh
+
+printf "\nXorg Components Done! \n\n"

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #
-# System Setup
+# Storage Setup
 #
 
-# Enable periodic trim (weekly)
+# Enable (weekly) periodic trim
 sudo systemctl enable fstrim.timer
 
 # Index filesystems for search

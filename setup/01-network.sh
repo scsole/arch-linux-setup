@@ -16,6 +16,9 @@ EOF
 # Synchronise the system clock across the network
 sudo systemctl enable systemd-timesyncd.service
 
+# Provide network name resolution to local applications
+sudo systemctl enable systemd-resolved.service
+
 # Enable firewall and deny all by default
 # NB: All packages that require access through the firewall
 # will need to be allowed.

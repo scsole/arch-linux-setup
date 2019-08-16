@@ -5,14 +5,15 @@
 #
 
 PKGS=(
-    'dialog'                # Display dialog boxes from shell scripts
-    'networkmanager'        # Network connection manager
-    'dhclient'              # DHCP client
-    'ufw'                   # Uncomplicated Firewall
+	'networkmanager'			# Network connection manager
+	'dhclient'					# DHCP client
+	'ufw'						# Uncomplicated Firewall
 )
 
-# Install network packages
+printf "\nInstalling Network Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-# Begin network setup
+printf "\nConfiguring Network\n\n"
 ./setup/01-network.sh
+
+printf "\nNetwork Components Done! \n\n"
