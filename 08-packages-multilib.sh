@@ -4,7 +4,7 @@
 # Multilib (32-bit) Packages
 #
 
-printf "\nEnabling Multilib Repository\n\n"
+printf "\n Enabling Multilib Repository\n\n"
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 sudo pacman -Syu
 
@@ -23,5 +23,5 @@ PKGS=(
 	'steam'						# Steam
 )
 
-printf "\nInstalling Multilib Packages\n\n"
+printf "\n Installing Multilib Packages\n\n"
 sudo pacman -S "${PKGS[@]}" --needed

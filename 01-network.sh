@@ -10,10 +10,10 @@ PKGS=(
 	'ufw'						# Uncomplicated Firewall
 )
 
-printf "\nInstalling Network Components\n\n"
+printf "\n Installing Network Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\nConfiguring Network\n\n"
+printf "\n Configuring Network\n\n"
 ./setup/01-network.sh
 
-printf "\nNetwork Components Done! \n\n"
+printf "\n Network Components Done! \n\n"

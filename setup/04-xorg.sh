@@ -28,7 +28,7 @@ EndSection
 EOF
 
 # NVIDIA configuration
-sudo tee /etc/X11/20-nvidia.conf <<EOF
+sudo tee /etc/X11/xorg.conf.d/20-nvidia.conf <<EOF
 Section "Module"
 	Load "modesetting"
 EndSection

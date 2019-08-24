@@ -4,11 +4,11 @@
 # Arch User Repository (AUR) Packages
 #
 
-printf "\nDownloading and Installing AUR Helper\n\n"
-cd
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur
-makepkg -fsri
+printf "\n Downloading and Installing AUR Helper \n\n"
+#cd
+#git clone https://aur.archlinux.org/pikaur.git
+#cd pikaur
+#makepkg -fsri
 
 PKGS=(
 	# Terminal Utilities
@@ -16,6 +16,8 @@ PKGS=(
 
 	# General Utilities
 	'enpass-bin'				# Multiplatform password manager
+	'j4-dmenu-desktop'			# A much faster replacement for dmenu
+	'optimus-manager'			# Utility to handle GPU switching on Optimus laptops
 	'optimus-manager-qt'		# Qt interface for Optimus Manager
 
 	# Development
@@ -23,13 +25,12 @@ PKGS=(
 	'github-desktop-bin'		# GUI for managing Git and GitHub
 
 	# Communication
-	'discord'					# Voice and text chat for gamers
-	'signal'					# Private messenger
+	#'signal'					# Private messenger
 
 	# Fonts
 	#'steam-fonts'
 )
 
-printf "\nInstalling AUR Packages\n\n"
+printf "\n Installing AUR Packages \n\n"
 pikaur -Syu
 pikaur -S "${PKGS[@]}" --needed

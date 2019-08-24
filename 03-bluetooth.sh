@@ -10,10 +10,10 @@ PKGS=(
 	'pulseaudio-bluetooth'		# PulseAudio Bluetooth support
 )
 
-printf "\nInstalling Bluetooth Components\n\n"
+printf "\n Installing Bluetooth Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\nConfiguring Bluetooth\n\n"
+printf "\n Configuring Bluetooth\n\n"
 ./setup/03-bluetooth.sh
 
-printf "\nBluetooth Components Done! \n\n"
+printf "\n Bluetooth Components Done! \n\n"

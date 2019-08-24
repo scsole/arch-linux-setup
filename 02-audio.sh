@@ -11,7 +11,7 @@ PKGS=(
 	'pulseaudio-alsa'			# ALSA configuration for PulseAudio
 )
 
-printf "\nInstalling Audio Components\n\n"
+printf "\n Installing Audio Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\nAudio Components Done! \n\n"
+printf "\n Audio Components Done! \n\n"
