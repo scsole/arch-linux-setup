@@ -11,24 +11,18 @@ printf "\n Downloading and Installing AUR Helper \n\n"
 #makepkg -fsri
 
 PKGS=(
-	# Terminal Utilities
-	'thermald'					# The Linux Thermal Daemon program from 01.org
+    # Terminal Utilities
+    'thermald'                  # The Linux Thermal Daemon program from 01.org
 
-	# General Utilities
-	'enpass-bin'				# Multiplatform password manager
-	'j4-dmenu-desktop'			# A much faster replacement for dmenu
-	'optimus-manager'			# Utility to handle GPU switching on Optimus laptops
-	'optimus-manager-qt'		# Qt interface for Optimus Manager
+    # General Utilities
+    'enpass-bin'                # Multiplatform password manager
+    'j4-dmenu-desktop'          # A much faster replacement for dmenu
+    'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
+    'optimus-manager-qt'        # Qt interface for Optimus Manager
 
-	# Development
-	'visual-studio-code-bin'	# Text editor
-	'github-desktop-bin'		# GUI for managing Git and GitHub
-
-	# Communication
-	#'signal'					# Private messenger
-
-	# Fonts
-	#'steam-fonts'
+    # Development
+    'visual-studio-code-bin'    # Text editor
+    'github-desktop-bin'        # GUI for managing Git and GitHub
 )
 
 printf "\n Installing AUR Packages \n\n"

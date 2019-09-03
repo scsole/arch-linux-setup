@@ -5,10 +5,10 @@
 #
 
 PKGS=(
-	'alsa-utils'				# Advanced Linux Sound Architecture (ALSA)
-	'alsa-plugins'				# Extra ALSA plugins
-	'pulseaudio'				# PulseAudio sound server
-	'pulseaudio-alsa'			# ALSA configuration for PulseAudio
+    'alsa-utils'                # Advanced Linux Sound Architecture (ALSA)
+    'alsa-plugins'              # Extra ALSA plugins
+    'pulseaudio'                # PulseAudio sound server
+    'pulseaudio-alsa'           # ALSA configuration for PulseAudio
 )
 
 printf "\n Installing Audio Components\n\n"

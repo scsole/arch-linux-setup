@@ -5,11 +5,11 @@
 #
 
 PKGS=(
-	'i3-gaps'					# i3wm with gaps
-	'i3blocks'					# Define blocks for i3bar
-	'i3lock'					# Screenlocker
-	'i3status'					# Generates a status bar for i3bar
-	'dmenu'						# Application launcher
+    'i3-gaps'                   # i3wm with gaps
+    'i3blocks'                  # Define blocks for i3bar
+    'i3lock'                    # Screenlocker
+    'i3status'                  # Generates a status bar for i3bar
+    'dmenu'                     # Application launcher
 )
 
 printf "\n Installing i3 Components\n\n"

@@ -5,9 +5,9 @@
 #
 
 PKGS=(
-	'bluez'						# Daemons for the Bluetooth protocol stack
-	'bluez-utils'				# Utilities for the Bluetooth protocol stack
-	'pulseaudio-bluetooth'		# PulseAudio Bluetooth support
+    'bluez'                     # Daemons for the Bluetooth protocol stack
+    'bluez-utils'               # Utilities for the Bluetooth protocol stack
+    'pulseaudio-bluetooth'      # PulseAudio Bluetooth support
 )
 
 printf "\n Installing Bluetooth Components\n\n"

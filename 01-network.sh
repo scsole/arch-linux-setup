@@ -5,9 +5,9 @@
 #
 
 PKGS=(
-	'networkmanager'			# Network connection manager
-	'dhclient'					# DHCP client
-	'ufw'						# Uncomplicated Firewall
+    'networkmanager'            # Network connection manager
+    'dhclient'                  # DHCP client
+    'ufw'                       # Uncomplicated Firewall
 )
 
 printf "\n Installing Network Components\n\n"
