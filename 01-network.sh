@@ -7,6 +7,8 @@
 PKGS=(
     'networkmanager'            # Network connection manager
     'dhclient'                  # DHCP client
+    'avahi'                     # Zero-configuration networking implementation
+    'nss-mdns'                  # Provides host name resolution
     'ufw'                       # Uncomplicated Firewall
 )
 
