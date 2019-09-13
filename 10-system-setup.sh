@@ -22,6 +22,14 @@ sudo systemctl enable tlp-sleep.service
 sudo systemctl enable thermald.service
 
 #
+# User permissions
+#
+
+sudo usermod -aG uucp "$USER"   # access serial devices
+sudo usermod -aG lock "$USER"   # required for Arduino IDE
+sudo gpasswd -a $USER input     # access to input devices
+
+#
 # Usage tweaks
 #
 
@@ -34,10 +42,5 @@ system=false
 users=
 EOF
 
-#
-# User permissions
-#
-
-# Access serial devices
-sudo usermod -aG uucp "$USER"
-sudo usermod -aG lock "$USER" # required for Arduino IDE
+# Libinput gestures
+libinput-gestures-setup autostart

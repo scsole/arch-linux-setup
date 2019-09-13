@@ -29,7 +29,7 @@ PKGS=(
     'gvim'                      # A highly configurable text editor
     'wget'                      # Retrieve remote content
     'xdg-user-dirs'             # Manage user directories
-    'zip'                       # Create and modify zipfiles
+    'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
     'gnuplot'                   # Plotting package
     'numlockx'                  # Turns on the numlock key in X11
@@ -43,8 +43,9 @@ PKGS=(
     # Development
     'astyle'                    # Formatter for C, C++, C#, and Java source code
     'android-tools'             # Android platform tools
+    'android-udev'              # Udev rules to connect Android devices
     'cuda'                      # NVIDIA's GPU programming toolkit
-    'opencl-nvidia'             # OpenCL implemention for NVIDIA
+    'opencl-nvidia'             # OpenCL implementation for NVIDIA
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
     'jdk-openjdk'               # Java development kit
@@ -59,7 +60,6 @@ PKGS=(
     'gdb'                       # The GNU Debugger
 
     # Network and Internet
-    'network-manager-applet'    # System tray applet for NM
     'firefox'                   # Mozilla's Web browser
     'filezilla'                 # FTP, FTPS, and SFTP Client
     'transmission-qt'           # BitTorrent client
@@ -79,6 +79,7 @@ PKGS=(
 
     # Media
     'ffmpeg'                    # Record, convert, and stream media
+    'ffmpegthumbs'              # FFmpeg-based thumbnail creator for video files
     'vlc'                       # Video player
 
     # Fonts
@@ -97,11 +98,11 @@ PKGS=(
     'breeze-gtk'
 
     # Other
-    'thunar'                    # Xfce file manager
     'arandr'                    # XRandR front end
     'lxappearance'              # GTK+ theme switcher
     'redshift'                  # Shift screen colour temperature
     'compton'                   # X compositor that may fix tearing issues
+    'gnome-color-manager'       # GNOME Color Profile Tools
 )
 
 printf "\n Installing Packages \n\n"

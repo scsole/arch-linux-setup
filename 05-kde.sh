@@ -20,9 +20,12 @@ PKGS=(
     'bluedevil'                 # Bluetooth manager
     'breeze'                    # Breeze theme
     'breeze-gtk'                # Breeze theme for GTK 2 and 3
-    'kde-gtk-config'            # GTK configurator
+    'kde-gtk-config'            # GTK configuration
     'kscreen'                   # Screen management in KDE
     'colord-kde'                # Use ICC profiles in Plasma
+    'spectacle'                 # Screenshot capture utility
+    'plasma5-applets-redshift-control'  # Applet for controlling redshift
+    'plasma-browser-integration'        # Integrate browsers into the Plasma Desktop
 )
 
 printf "\n Installing KDE Plasma Components\n\n"
