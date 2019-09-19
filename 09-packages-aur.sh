@@ -24,10 +24,10 @@ PKGS=(
 
     # Development
     'visual-studio-code-bin'    # Text editor
-#    'github-desktop-bin'        # GUI for managing Git and GitHub
 
     # Communication
     'signal-desktop-bin'        # Signal private messaging
+    'whatsapp-nativefier'       # WhatsApp desktop
 )
 
 printf "\n Installing AUR Packages \n\n"
