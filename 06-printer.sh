@@ -9,7 +9,6 @@ PKGS=(
     'cups-pdf'                  # PDF printer for CUPS
     'gutenprint'                # Printer drivers
     'system-config-printer'     # Printer configuration tool and status applet
-    'print-manager'             # A tool for managing print jobs and printers
 )
 
 printf "\n Installing Printer Components\n\n"
