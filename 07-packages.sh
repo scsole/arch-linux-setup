@@ -11,18 +11,16 @@ PKGS=(
     # Terminal Utilities
     'bash-completion'           # Tab completion for Bash
     'cpupower'                  # Utilities to assist with CPU frequency scaling
-    'compton'                   # X compositor
     'curl'                      # Retrieve remote content
-    'feh'                       # Fast image viewer
-    'thunar'                    # Simple, vim-like file manager
-    'gptfdisk'                  # Tool for partitioning GPT disks
+#    'feh'                       # Fast image viewer
+#    'gptfdisk'                  # Tool for partitioning GPT disks
     'htop'                      # Interactive process viewer
     'i7z'                       # Intel i7 CPU reporting tool
-    'light'                     # Change brightness on backlight-controllers
+#    'light'                     # Change brightness on backlight-controllers
     'mlocate'                   # File searching utility
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
-    'pulsemixer'                # Mixer for pulseaudio
+#    'pulsemixer'                # Mixer for pulseaudio
     'rsync'                     # Sync remote files
     'tlp'                       # Linux Advanced Power Management
     'tree'                      # Directory listing program
@@ -32,7 +30,7 @@ PKGS=(
     'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
     'gnuplot'                   # Plotting package
-    'numlockx'                  # Turns on the numlock key in X11
+#    'numlockx'                  # Turns on the numlock key in X11
 
     # Storage
     'exfat-utils'               # Utilities for exFAT filesystems
@@ -53,7 +51,7 @@ PKGS=(
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
-    'rxvt-unicode'              # Terminal emulator
+#    'rxvt-unicode'              # Terminal emulator
     'arduino'                   # Arduino prototyping platform SDK
     'arduino-docs'              # Arduino IDE reference documentation
     'valgrind'                  # Helps find memory-management problems in programs
@@ -81,6 +79,10 @@ PKGS=(
     'ffmpeg'                    # Record, convert, and stream media
     'ffmpegthumbs'              # FFmpeg-based thumbnail creator for video files
     'vlc'                       # Video player
+    'gst-libav'                 # Libav codecs
+    'gst-plugins-good'          # PulseAudio support and additional codecs
+    'gst-plugins-ugly'          # Additional codecs
+    'gst-plugins-bad'           # Additional codecs
 
     # Fonts
     'noto-fonts'
@@ -94,15 +96,15 @@ PKGS=(
     'ttf-font-awesome'
 
     # Themes
-    'breeze'
-    'breeze-gtk'
 
     # Other
-    'arandr'                    # XRandR front end
-    'lxappearance'              # GTK+ theme switcher
+#    'arandr'                    # XRandR front end
+#    'lxappearance'              # GTK+ theme switcher
     'redshift'                  # Shift screen colour temperature
-    'compton'                   # X compositor that may fix tearing issues
-    'gnome-color-manager'       # GNOME Color Profile Tools
+#    'compton'                   # X compositor that may fix tearing issues
+
+    # Games
+    'lutris'                    # Open Gaming Platform
 )
 
 printf "\n Installing Packages \n\n"
