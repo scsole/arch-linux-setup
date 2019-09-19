@@ -7,6 +7,15 @@
 # Enable (weekly) periodic trim
 sudo systemctl enable fstrim.timer
 
+# Reduce swappiness
+echo vm.swappiness=1 | sudo tee /etc/sysctl.d/99-swappiness.conf
+
+# Reduce hibernation image size 
+sudo tee /etc/tmpfiles.d/reduce-image-size.conf <<EOF
+#   Path                    Mode UID  GID  Age  Argument
+w   /sys/power/image_size   -    -    -    -    8589934592
+EOF
+
 # Index filesystems for search
 sudo updatedb
 
@@ -27,7 +36,7 @@ sudo systemctl enable thermald.service
 
 sudo usermod -aG uucp "$USER"   # access serial devices
 sudo usermod -aG lock "$USER"   # required for Arduino IDE
-sudo gpasswd -a $USER input     # access to input devices
+sudo usermod -aG input $USER    # required for libinput gestures
 
 #
 # Usage tweaks
