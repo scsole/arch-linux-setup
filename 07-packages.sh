@@ -98,9 +98,11 @@ PKGS=(
     # Themes
 
     # Other
+    'virtualbox'                # VirtualBox 
+    'virtualbox-guest-iso'      # Guest additions disc for vbox
 #    'arandr'                    # XRandR front end
 #    'lxappearance'              # GTK+ theme switcher
-    'redshift'                  # Shift screen colour temperature
+#    'redshift'                  # Shift screen colour temperature
 #    'compton'                   # X compositor that may fix tearing issues
 
     # Games

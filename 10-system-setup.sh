@@ -37,6 +37,7 @@ sudo systemctl enable thermald.service
 sudo usermod -aG uucp "$USER"   # access serial devices
 sudo usermod -aG lock "$USER"   # required for Arduino IDE
 sudo usermod -aG input $USER    # required for libinput gestures
+sudo usermod -aG vboxusers $USER    # access host USB devices in vbox
 
 #
 # Usage tweaks

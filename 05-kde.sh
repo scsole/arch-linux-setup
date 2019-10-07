@@ -11,6 +11,7 @@ PKGS=(
     'sddm'                      # Simple Desktop Display Manager
 
     # Extra Plasma packages
+    'ark'                       # Archiving tool
     'dolphin'                   # File Manager
     'konsole'                   # Terminal emulator
     'kwalletmanager'            # Wallet management tool

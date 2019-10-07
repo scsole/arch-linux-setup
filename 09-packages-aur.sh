@@ -16,6 +16,7 @@ PKGS=(
     'libinput-gestures'         # touchpad gestures using libinput
     'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
     'optimus-manager-qt'        # Qt interface for Optimus Manager
+    'nbfc'                      # Fan control service for notebooks
 
     # General
     'enpass-bin'                # Multiplatform password manager
