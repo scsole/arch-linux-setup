@@ -15,6 +15,7 @@ PKGS=(
     'dolphin'                   # File Manager
     'konsole'                   # Terminal emulator
     'kwalletmanager'            # Wallet management tool
+    'partitionmanager'          # Manage disks, partitions, and file systems
     'kdeplasma-addons'          # Addons to improve the Plasma experience
     'plasma-nm'                 # Network Manager applet
     'plasma-pa'                 # PulseAudio applet
