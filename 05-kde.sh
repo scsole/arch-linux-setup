@@ -33,9 +33,7 @@ PKGS=(
     'print-manager'             # A tool for managing print jobs and printers
     'plasma-browser-integration'        # Integrate browsers into the Plasma Desktop
     'sddm-kcm'                  # SDDM Config Module
-
-    'xdg-desktop-portal'        # Desktop integration portals for sandboxed apps
-    'xdg-desktop-portal-kde'    # A backend implementation using Qt/KF5
+#    'plasma5-applets-redshift-control'  # Plasma applet to control redshift
 )
 
 printf "\n Installing KDE Plasma Components\n\n"
