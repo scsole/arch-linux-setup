@@ -16,9 +16,6 @@ sudo tee /etc/tmpfiles.d/reduce-image-size.conf <<EOF
 w   /sys/power/image_size   -    -    -    -    8589934592
 EOF
 
-# Index filesystems for search
-sudo updatedb
-
 #
 # Power management
 #
@@ -54,3 +51,7 @@ sudo usermod -aG input $USER    # required for libinput gestures
 
 # Libinput gestures
 #libinput-gestures-setup autostart
+
+# Index filesystems for search
+sudo updatedb
+
