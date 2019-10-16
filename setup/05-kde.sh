@@ -14,6 +14,7 @@ sudo tee /etc/sddm.conf.d/theme.conf <<EOF
 Current=breeze
 CursorTheme=Adwaita
 EOF
-sudo tee /etc/sddm.conf.d/genera.conf <<EOF
+sudo tee /etc/sddm.conf.d/general.conf <<EOF
+[General]
 Numlock=on
 EOF
