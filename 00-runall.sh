@@ -11,7 +11,7 @@ chmod +x ./*/*.sh ./*.sh
 ./05-kde.sh
 ./06-printer.sh
 ./07-packages.sh
-./08-packages-multilib.sh
+#./08-packages-multilib.sh
 ./09-packages-aur.sh
 ./10-system-setup.sh
 

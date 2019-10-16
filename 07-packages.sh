@@ -3,9 +3,6 @@
 #
 # Pacman Packages
 #
-# TODO:
-#  - Categorise package list better
-#
 
 PKGS=(
     # Terminal Utilities
@@ -13,7 +10,6 @@ PKGS=(
     'cpupower'                  # Utilities to assist with CPU frequency scaling
     'curl'                      # Retrieve remote content
 #    'feh'                       # Fast image viewer
-#    'gptfdisk'                  # Tool for partitioning GPT disks
     'htop'                      # Interactive process viewer
     'i7z'                       # Intel i7 CPU reporting tool
 #    'light'                     # Change brightness on backlight-controllers
@@ -98,14 +94,14 @@ PKGS=(
     # Themes
 
     # Other
-    'virtualbox'                # VirtualBox 
-    'virtualbox-guest-iso'      # Guest additions disc for vbox
+#    'virtualbox'                # VirtualBox 
+#    'virtualbox-guest-iso'      # Guest additions disc for vbox
 #    'arandr'                    # XRandR front end
 #    'lxappearance'              # GTK+ theme switcher
 #    'compton'                   # X compositor that may fix tearing issues
 
     # Games
-    'lutris'                    # Open Gaming Platform
+#    'lutris'                    # Open Gaming Platform
 )
 
 printf "\n Installing Packages \n\n"

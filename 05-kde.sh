@@ -32,8 +32,6 @@ PKGS=(
     'spectacle'                 # Screenshot capture utility
     'print-manager'             # A tool for managing print jobs and printers
     'plasma-browser-integration'        # Integrate browsers into the Plasma Desktop
-    'sddm-kcm'                  # SDDM Config Module
-#    'plasma5-applets-redshift-control'  # Plasma applet to control redshift
 )
 
 printf "\n Installing KDE Plasma Components\n\n"

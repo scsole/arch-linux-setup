@@ -5,7 +5,8 @@
 #
 
 printf "\n Downloading and Installing AUR Helper \n\n"
-cd
+mkdir ~/source
+cd ~/source
 git clone https://aur.archlinux.org/pikaur.git
 cd pikaur
 makepkg -fsri
@@ -19,7 +20,7 @@ PKGS=(
 
     # General
     'enpass-bin'                # Multiplatform password manager
-    'redshift-minimal'          # Adjust screen colour temperature
+#    'redshift-minimal'          # Adjust screen colour temperature
 #    'j4-dmenu-desktop'          # A much faster replacement for dmenu
 #    'urxvt-resize-font-git'     # Change font on the fly in rxvt
 
