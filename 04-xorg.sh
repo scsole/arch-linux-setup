@@ -9,8 +9,6 @@ PKGS=(
     'xorg-server'               # Xorg X server
     'xorg-apps'                 # Additional packages for configuration
     'xorg-xinit'                # Xorg initialisation program
-#    'xautolock'                 # Automatic X screen-locker
-#    'xss-lock'                  # Use external locker as X screen saver
 
     # Display drivers
     'xf86-video-intel'          # Intel video driver

@@ -15,11 +15,12 @@ PKGS=(
     'dolphin'                   # File Manager
     'konsole'                   # Terminal emulator
     'kwalletmanager'            # Wallet management tool
+    'kwallet-pam'               # KWallet PAM integration
     'partitionmanager'          # Manage disks, partitions, and file systems
     'kdeplasma-addons'          # Addons to improve the Plasma experience
     'plasma-nm'                 # Network Manager applet
     'plasma-pa'                 # PulseAudio applet
-    'user-manager'              # Settings module to manage users
+#    'user-manager'              # Settings module to manage users
     'powerdevil'                # Plasma power manager
     'bluedevil'                 # Bluetooth manager
     'breeze'                    # Breeze theme
@@ -32,6 +33,8 @@ PKGS=(
     'spectacle'                 # Screenshot capture utility
     'print-manager'             # A tool for managing print jobs and printers
     'plasma-browser-integration'        # Integrate browsers into the Plasma Desktop
+
+    'libappindicator-gtk3'      # Allows clear icons in system tray
 )
 
 printf "\n Installing KDE Plasma Components\n\n"

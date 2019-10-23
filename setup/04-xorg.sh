@@ -5,27 +5,27 @@
 #
 
 # Pointer libinput configuration
-sudo tee /etc/X11/xorg.conf.d/30-pointer.conf <<EOF
-Section "InputClass"
-	Identifier "pointer"
-	Driver "libinput"
-	MatchIsPointer "yes"
-	Option "AccelProfile" "flat"
-	Option "AccelSpeed" "0"
-EndSection
-EOF
+#sudo tee /etc/X11/xorg.conf.d/30-pointer.conf <<EOF
+#Section "InputClass"
+#	Identifier "pointer"
+#	Driver "libinput"
+#	MatchIsPointer "yes"
+#	Option "AccelProfile" "flat"
+#	Option "AccelSpeed" "0"
+#EndSection
+#EOF
 
 # Touchpad libinput configuration
-sudo tee /etc/X11/xorg.conf.d/30-touchpad.conf <<EOF
-Section "InputClass"
-	Identifier "touchpad"
-	Driver "libinput"
-	MatchIsTouchpad "on"
-	Option "Tapping" "on"
-	Option "ClickMethod" "clickfinger"
-	Option "NaturalScrolling" "true"
-EndSection
-EOF
+#sudo tee /etc/X11/xorg.conf.d/30-touchpad.conf <<EOF
+#Section "InputClass"
+#	Identifier "touchpad"
+#	Driver "libinput"
+#	MatchIsTouchpad "on"
+#	Option "Tapping" "on"
+#	Option "ClickMethod" "clickfinger"
+#	Option "NaturalScrolling" "true"
+#EndSection
+#EOF
 
 # NVIDIA configuration
 sudo tee /etc/X11/xorg.conf.d/20-nvidia.conf <<EOF
@@ -41,6 +41,11 @@ Section "Device"
 EndSection
 EOF
 
+sudo tee -a /usr/share/sddm/scripts/Xsetup <<EOF
+
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+EOF
 
 # Make sure initramfs is updated after a NVIDIA driver update
 sudo tee /etc/pacman.d/hooks/nvidia.hook <<EOF

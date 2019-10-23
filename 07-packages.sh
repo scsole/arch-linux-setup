@@ -25,8 +25,6 @@ PKGS=(
     'xdg-user-dirs'             # Manage user directories
     'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
-    'gnuplot'                   # Plotting package
-#    'numlockx'                  # Turns on the numlock key in X11
 
     # Storage
     'exfat-utils'               # Utilities for exFAT filesystems
@@ -40,7 +38,7 @@ PKGS=(
     'android-udev'              # Udev rules to connect Android devices
     'cuda'                      # NVIDIA's GPU programming toolkit
     'opencl-nvidia'             # OpenCL implementation for NVIDIA
-    'flatpak'                   # A tool for package distribution
+#    'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
     'jdk-openjdk'               # Java development kit
     'openscad'                  # The programmers solid 3D CAD modeller
@@ -52,6 +50,7 @@ PKGS=(
     'arduino-docs'              # Arduino IDE reference documentation
     'valgrind'                  # Helps find memory-management problems in programs
     'gdb'                       # The GNU Debugger
+    'gnuplot'                   # Plotting package
 
     # Network and Internet
     'firefox'                   # Mozilla's Web browser
@@ -101,7 +100,7 @@ PKGS=(
 #    'compton'                   # X compositor that may fix tearing issues
 
     # Games
-#    'lutris'                    # Open Gaming Platform
+    'lutris'                    # Open Gaming Platform
 )
 
 printf "\n Installing Packages \n\n"

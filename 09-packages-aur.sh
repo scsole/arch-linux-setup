@@ -5,7 +5,7 @@
 #
 
 printf "\n Downloading and Installing AUR Helper \n\n"
-mkdir ~/source
+mkdir -p ~/source
 cd ~/source
 git clone https://aur.archlinux.org/pikaur.git
 cd pikaur
@@ -15,8 +15,8 @@ PKGS=(
     # Utilities
     'thermald'                  # The Linux Thermal Daemon program from 01.org
     'libinput-gestures'         # touchpad gestures using libinput
-    'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
-    'optimus-manager-qt'        # Qt interface for Optimus Manager
+#    'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
+#    'optimus-manager-qt'        # Qt interface for Optimus Manager
 
     # General
     'enpass-bin'                # Multiplatform password manager
