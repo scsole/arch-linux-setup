@@ -55,3 +55,7 @@ sudo usermod -aG input $USER    # required for libinput gestures
 # Index filesystems for search
 sudo updatedb
 
+# Replace vi with vim
+sudo tee -a /etc/enviorment <<EOF
+EDITOR=vim
+EOF
