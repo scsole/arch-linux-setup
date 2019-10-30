@@ -52,6 +52,9 @@ sudo usermod -aG input $USER    # required for libinput gestures
 # Libinput gestures
 #libinput-gestures-setup autostart
 
+# Enable pacman colour output
+sudo sed -i '/Color/s/^#//' /etc/pacman.conf
+
 # Index filesystems for search
 sudo updatedb
 
