@@ -59,6 +59,6 @@ sudo sed -i '/Color/s/^#//' /etc/pacman.conf
 sudo updatedb
 
 # Replace vi with vim
-sudo tee -a /etc/enviorment <<EOF
+sudo tee -a /etc/environment <<EOF
 EDITOR=vim
 EOF
