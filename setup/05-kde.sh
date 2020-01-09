@@ -18,5 +18,3 @@ sudo tee /etc/sddm.conf.d/general.conf <<EOF
 [General]
 Numlock=on
 EOF
-
-# TODO: Unlock KWallet automatically on login

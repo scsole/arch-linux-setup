@@ -11,10 +11,10 @@ sudo systemctl enable fstrim.timer
 echo vm.swappiness=1 | sudo tee /etc/sysctl.d/99-swappiness.conf
 
 # Reduce hibernation image size 
-sudo tee /etc/tmpfiles.d/reduce-image-size.conf <<EOF
+#sudo tee /etc/tmpfiles.d/reduce-image-size.conf <<EOF
 #   Path                    Mode UID  GID  Age  Argument
-w   /sys/power/image_size   -    -    -    -    8589934592
-EOF
+#w   /sys/power/image_size   -    -    -    -    8589934592
+#EOF
 
 #
 # Power management
