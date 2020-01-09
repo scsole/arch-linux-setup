@@ -9,14 +9,11 @@ PKGS=(
     'bash-completion'           # Tab completion for Bash
     'cpupower'                  # Utilities to assist with CPU frequency scaling
     'curl'                      # Retrieve remote content
-#    'feh'                       # Fast image viewer
     'htop'                      # Interactive process viewer
     'i7z'                       # Intel i7 CPU reporting tool
 #    'light'                     # Change brightness on backlight-controllers
-    'mlocate'                   # File searching utility
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
-#    'pulsemixer'                # Mixer for pulseaudio
     'rsync'                     # Sync remote files
     'tlp'                       # Linux Advanced Power Management
     'tree'                      # Directory listing program
