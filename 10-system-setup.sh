@@ -50,7 +50,7 @@ sudo usermod -aG input $USER    # required for libinput gestures
 #EOF
 
 # Libinput gestures
-#libinput-gestures-setup autostart
+libinput-gestures-setup autostart
 
 # Enable pacman colour output
 sudo sed -i '/Color/s/^#//' /etc/pacman.conf
@@ -59,6 +59,6 @@ sudo sed -i '/Color/s/^#//' /etc/pacman.conf
 sudo updatedb
 
 # Replace vi with vim
-sudo tee -a /etc/enviorment <<EOF
+sudo tee -a /etc/environment <<EOF
 EDITOR=vim
 EOF
