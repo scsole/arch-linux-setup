@@ -7,8 +7,7 @@
 PKGS=(
     'networkmanager'            # Network connection manager
     'dhclient'                  # DHCP client
-    'avahi'                     # Zero-configuration networking implementation
-    'nss-mdns'                  # Provides host name resolution
+    'dialog'                    # A tool to display dialog boxes from shell scripts
     'ufw'                       # Uncomplicated Firewall
 )
 
