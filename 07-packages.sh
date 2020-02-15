@@ -11,7 +11,7 @@ PKGS=(
     'curl'                      # Retrieve remote content
     'htop'                      # Interactive process viewer
     'i7z'                       # Intel i7 CPU reporting tool
-#    'light'                     # Change brightness on backlight-controllers
+    'light'                     # Change brightness on backlight-controllers
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
     'rsync'                     # Sync remote files
@@ -42,7 +42,7 @@ PKGS=(
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
-#    'rxvt-unicode'              # Terminal emulator
+    'rxvt-unicode'              # Terminal emulator
     'arduino'                   # Arduino prototyping platform SDK
     'arduino-docs'              # Arduino IDE reference documentation
     'valgrind'                  # Helps find memory-management problems in programs
@@ -53,6 +53,7 @@ PKGS=(
     'firefox'                   # Mozilla's Web browser
     'filezilla'                 # FTP, FTPS, and SFTP Client
     'transmission-qt'           # BitTorrent client
+    'signal-desktop'            # Signal private messaging
 
     # Productivity
     'hunspell'                  # Spellchecker
@@ -97,7 +98,7 @@ PKGS=(
 #    'compton'                   # X compositor that may fix tearing issues
 
     # Games
-    'lutris'                    # Open Gaming Platform
+#    'lutris'                    # Open Gaming Platform
 )
 
 printf "\n Installing Packages \n\n"

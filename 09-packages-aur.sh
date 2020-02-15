@@ -29,7 +29,6 @@ PKGS=(
     'visual-studio-code-bin'    # Text editor
 
     # Communication
-    'signal-desktop-bin'        # Signal private messaging
 #    'whatsapp-nativefier'       # WhatsApp desktop
 
     # Media
