@@ -50,7 +50,7 @@ sudo usermod -aG input $USER    # required for libinput gestures
 #EOF
 
 # Libinput gestures
-libinput-gestures-setup autostart
+#libinput-gestures-setup autostart
 
 # Enable pacman colour output
 sudo sed -i '/Color/s/^#//' /etc/pacman.conf
@@ -62,3 +62,10 @@ sudo updatedb
 sudo tee -a /etc/environment <<EOF
 EDITOR=vim
 EOF
+
+#
+# System
+#
+
+# Ensure the ICD loader from the ocl-icd package is used
+echo '/usr/lib' | sudo tee /etc/ld.so.conf.d/00-usrlib.conf

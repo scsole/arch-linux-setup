@@ -8,7 +8,6 @@ PKGS=(
     # Terminal Utilities
     'bash-completion'           # Tab completion for Bash
     'cpupower'                  # Utilities to assist with CPU frequency scaling
-    'curl'                      # Retrieve remote content
     'htop'                      # Interactive process viewer
     'i7z'                       # Intel i7 CPU reporting tool
     'light'                     # Change brightness on backlight-controllers
@@ -33,9 +32,12 @@ PKGS=(
     'astyle'                    # Formatter for C, C++, C#, and Java source code
     'android-tools'             # Android platform tools
     'android-udev'              # Udev rules to connect Android devices
+    'code'                      # The Open Source build of Visual Studio Code
     'cuda'                      # NVIDIA's GPU programming toolkit
-    'opencl-nvidia'             # OpenCL implementation for NVIDIA
-#    'flatpak'                   # A tool for package distribution
+    'intel-compute-runtime'     # Intel Graphics Compute Runtime for OpenCL
+    'clinfo'                    # Enumerates all available platform and device properties
+    'ocl-icd'                   # OpenCL ICD Bindings
+    'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
     'jdk-openjdk'               # Java development kit
     'openscad'                  # The programmers solid 3D CAD modeller
