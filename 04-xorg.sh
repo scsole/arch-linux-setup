@@ -7,14 +7,15 @@
 PKGS=(
     # Xorg display server
     'xorg-server'               # Xorg X server
-    'xorg-apps'                 # Additional packages for configuration
+    'xorg-apps'                 # Additional Xorg packages
     'xorg-xinit'                # Xorg initialisation program
 
     # Display drivers
-    'xf86-video-intel'          # Intel video driver
     'mesa'                      # Open-source OpenGL implementation
     'nvidia'                    # NVIDIA video driver
     'nvidia-settings'           # Tool for configuring the NVIDIA graphics driver
+    'intel-media-driver'        # Hardware video acceleration via VA-API — Broadwell+ iGPUs
+    'libva-utils'               # Intel VA-API Media Applications and Scripts for libva
 )
 
 printf "\n Installing Xorg Components\n\n"
