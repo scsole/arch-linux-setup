@@ -6,8 +6,9 @@
 
 PKGS=(
     'networkmanager'            # Network connection manager
-    'dhclient'                  # DHCP client
     'dialog'                    # A tool to display dialog boxes from shell scripts
+    'dhclient'                  # DHCP client
+    'dnsmasq'                   # DNS forwarder and DHCP server
     'ufw'                       # Uncomplicated Firewall
 )
 
