@@ -14,6 +14,7 @@ PKGS=(
     'mesa'                      # Open-source OpenGL implementation
     'nvidia'                    # NVIDIA video driver
     'nvidia-settings'           # Tool for configuring the NVIDIA graphics driver
+    'nvidia-prime'              # NVIDIA Prime Render Offload configuration and utilities
     'intel-media-driver'        # Hardware video acceleration via VA-API — Broadwell+ iGPUs
     'libva-utils'               # Intel VA-API Media Applications and Scripts for libva
     'vulkan-icd-loader'         # Vulkan Installable Client Driver (ICD) Loader
