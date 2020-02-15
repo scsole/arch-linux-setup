@@ -16,6 +16,8 @@ PKGS=(
     'nvidia-settings'           # Tool for configuring the NVIDIA graphics driver
     'intel-media-driver'        # Hardware video acceleration via VA-API — Broadwell+ iGPUs
     'libva-utils'               # Intel VA-API Media Applications and Scripts for libva
+    'vulkan-icd-loader'         # Vulkan Installable Client Driver (ICD) Loader
+    'vulkan-intel'              # Intel's Vulkan mesa driver
 )
 
 printf "\n Installing Xorg Components\n\n"
