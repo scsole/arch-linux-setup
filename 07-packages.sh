@@ -15,6 +15,7 @@ PKGS=(
     'openssh'                   # Remote login with the SSH protocol
     'rsync'                     # Sync remote files
     'tlp'                       # Linux Advanced Power Management
+    'tlp-rdw'                   # TLP - Radio Device Wizard
     'tree'                      # Directory listing program
     'gvim'                      # A highly configurable text editor
     'wget'                      # Retrieve remote content
@@ -93,6 +94,8 @@ PKGS=(
     # Themes
 
     # Other
+    'blueman'                   # GTK+ Bluetooth manager
+    'thunar'                    # File manager
 #    'virtualbox'                # VirtualBox 
 #    'virtualbox-guest-iso'      # Guest additions disc for vbox
 #    'arandr'                    # XRandR front end

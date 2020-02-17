@@ -8,7 +8,6 @@ PKGS=(
     'bluez'                     # Daemons for the Bluetooth protocol stack
     'bluez-utils'               # Utilities for the Bluetooth protocol stack
     'pulseaudio-bluetooth'      # PulseAudio Bluetooth support
-    'blueman'                   # GTK+ Bluetooth manager
 )
 
 printf "\n Installing Bluetooth Components\n\n"

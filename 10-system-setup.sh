@@ -22,10 +22,16 @@ echo vm.swappiness=1 | sudo tee /etc/sysctl.d/99-swappiness.conf
 
 # Enable TLP
 sudo systemctl enable tlp.service
-sudo systemctl enable tlp-sleep.service
+sudo systemctl enable NetworkManager-dispatcher.service
+sudo systemctl mask systemd-rfkill.service
+suso systemctl mask systemd-rfkill.socket
 
 # Enable thermald
 sudo systemctl enable thermald.service
+
+
+# Disable auto power-on of Bluetooth adapter (Blueman)
+gsettings set org.blueman.plugins.powermanager auto-power-on false
 
 #
 # User permissions
@@ -55,8 +61,6 @@ sudo usermod -aG input $USER    # required for libinput gestures
 # Enable pacman colour output
 sudo sed -i '/Color/s/^#//' /etc/pacman.conf
 
-# Index filesystems for search
-sudo updatedb
 
 # Replace vi with vim
 sudo tee -a /etc/environment <<EOF
