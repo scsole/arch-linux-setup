@@ -10,6 +10,9 @@ sudo systemctl enable systemd-timesyncd.service
 sudo systemctl enable NetworkManager.service
 sudo systemctl enable ufw.service
 
+# Enable network time synchronisation
+sudo timedatectl set-ntp true
+
 # Use systemd-resolved for domain name resolution
 sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
