@@ -9,6 +9,7 @@ PKGS=(
     'alsa-plugins'              # Extra ALSA plugins
     'pulseaudio'                # PulseAudio sound server
     'pulseaudio-alsa'           # ALSA configuration for PulseAudio
+    'pamixer'                   # PulseAudio command line mixer
 )
 
 printf "\n Installing Audio Components\n\n"
