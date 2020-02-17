@@ -5,7 +5,7 @@
 #
 
 printf "\n Downloading and Installing AUR Helper \n\n"
-mkdir -p ~/src
+mkdir -p ~/source
 cd ~/src
 git clone https://aur.archlinux.org/pikaur.git
 cd pikaur
