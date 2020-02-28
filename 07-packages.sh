@@ -17,15 +17,20 @@ PKGS=(
     'tlp'                       # Linux Advanced Power Management
     'tlp-rdw'                   # TLP - Radio Device Wizard
     'tree'                      # Directory listing program
-    'gvim'                      # A highly configurable text editor
     'wget'                      # Retrieve remote content
     'xdg-user-dirs'             # Manage user directories
     'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
 
-    # Storage
-    'exfat-utils'               # Utilities for exFAT filesystems
-    'nfs-utils'                 # Support programs for Network File Systems
+    # Storage Drivers / Utilities
+    'dosfstools'                # DOS filesystem utilities
+    'exfat-utils'               # exFAT filesystem utilities
+    'f2fs-tools'                # f2fs filesystem utilities
+    'e2fsprogs'                 # Ext2/3/4 filesystem utilities
+    'ntfs-3g'                   # NTFS filesystem utilities
+    'xfsprogs'                  # XFS filesystem utilities
+    'nfs-utils'                 # Tools for Network File Systems
+    'smbclient'                 # Tools for accessing SMB filespaces and printers
     'parted'                    # Disk utility
     'sshfs'                     # SSH File Transfer Protocol
     
@@ -33,30 +38,15 @@ PKGS=(
     'astyle'                    # Formatter for C, C++, C#, and Java source code
     'android-tools'             # Android platform tools
     'android-udev'              # Udev rules to connect Android devices
-    'code'                      # The Open Source build of Visual Studio Code
-    'cuda'                      # NVIDIA's GPU programming toolkit
-    'intel-compute-runtime'     # Intel Graphics Compute Runtime for OpenCL
-    'clinfo'                    # Enumerates all available platform and device properties
-    'ocl-icd'                   # OpenCL ICD Bindings
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
     'jdk-openjdk'               # Java development kit
-    'openscad'                  # The programmers solid 3D CAD modeller
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
-    'rxvt-unicode'              # Terminal emulator
-    'arduino'                   # Arduino prototyping platform SDK
-    'arduino-docs'              # Arduino IDE reference documentation
     'valgrind'                  # Helps find memory-management problems in programs
     'gdb'                       # The GNU Debugger
     'gnuplot'                   # Plotting package
-
-    # Network and Internet
-    'firefox'                   # Mozilla's Web browser
-    'filezilla'                 # FTP, FTPS, and SFTP Client
-    'transmission-qt'           # BitTorrent client
-    'signal-desktop'            # Signal private messaging
 
     # Productivity
     'hunspell'                  # Spellchecker
@@ -67,14 +57,11 @@ PKGS=(
     'libmythes'                 # Thesaurus
     'mythes-en'                 # English thesaurus
     'libreoffice-fresh'         # LibreOffice
-    'okular'                    # Document Viewer
     'speedcrunch'               # A powerful calculator
-    'discord'                   # Voice and text chat for gamers
 
-    # Media
+    # Media and codecs
     'ffmpeg'                    # Record, convert, and stream media
-    'ffmpegthumbs'              # FFmpeg-based thumbnail creator for video files
-    'vlc'                       # Video player
+    'intel-media-sdk'           # Intel QuickSync support for ffmpeg
     'gst-libav'                 # Libav codecs
     'gst-plugins-good'          # PulseAudio support and additional codecs
     'gst-plugins-ugly'          # Additional codecs
@@ -91,19 +78,25 @@ PKGS=(
     'ttf-hack'
     'ttf-font-awesome'
 
-    # Themes
+    # Network and Internet
+    'firefox'                   # Mozilla's Web browser
+    'filezilla'                 # FTP, FTPS, and SFTP Client
+    'transmission-gtk'          # BitTorrent client
+    'signal-desktop'            # Signal private messaging
+    'discord'                   # Voice and text chat
 
-    # Other
-    'blueman'                   # GTK+ Bluetooth manager
-    'thunar'                    # File manager
-#    'virtualbox'                # VirtualBox 
-#    'virtualbox-guest-iso'      # Guest additions disc for vbox
-#    'arandr'                    # XRandR front end
-#    'lxappearance'              # GTK+ theme switcher
-#    'compton'                   # X compositor that may fix tearing issues
+    # Applications
+    'blender'                   # 3D graphics creation suite
+    'code'                      # The Open Source build of Visual Studio Code
+    'gvim'                      # A highly configurable text editor
+    'openscad'                  # The programmers solid 3D CAD modeller
+    'rxvt-unicode'              # Terminal emulator
+    'thunar'                    # XFCE File manager
+    'vlc'                       # Video player
 
-    # Games
-#    'lutris'                    # Open Gaming Platform
+    # Utilities
+    'arandr'                    # XRandR front end
+    'lxappearance'              # GTK+ theme switcher
 )
 
 printf "\n Installing Packages \n\n"
