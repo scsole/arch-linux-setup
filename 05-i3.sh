@@ -13,6 +13,9 @@ PKGS=(
     'dmenu'                     # Application launcher
 
     # Useful utilities
+    'dex'                       # Generate and execute desktop entries
+    'xss-lock'                  # Use external loker as X screen saver
+    'feh'                       # Fast and light imlib2-based image viewer
     'blueman'                   # Bluetooth manager
     'pasystray'                 # Applet for PulseAudio
     'network-manager-applet'    # Applet for NetworkManager
