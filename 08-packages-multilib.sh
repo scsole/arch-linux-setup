@@ -12,14 +12,13 @@ PKGS=(
     # Display drivers
     'lib32-mesa'                # Open-source OpenGL implementation
     'lib32-vulkan-intel'        # Intel's Vulkan mesa driver
-    'lib32-vulkan-icd-loader'   # Vulkan Installable Client Driver
-    'lib32-nvidia-utils'        # NVIDIA driver utilities
+    'lib32-vulkan-icd-loader'   # Vulkan Installable Client Driver Loader
 
     # Audio Components
     'lib32-libpulse'            # PulseAudio sound server
     'lib32-alsa-plugins'        # ALSA configuration for PulseAudio
 
-    # Utilities
+    # Gaming
     'steam'                     # Steam
 )
 
