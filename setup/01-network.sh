@@ -5,16 +5,22 @@
 #
 
 # Enable services
-sudo systemctl enable systemd-resolved.service
 sudo systemctl enable systemd-timesyncd.service
 sudo systemctl enable NetworkManager.service
+sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ufw.service
 
 # Enable network time synchronisation
 sudo timedatectl set-ntp true
 
-# Use systemd-resolved for domain name resolution
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+# Enable local network hostname resolution
+sudo sed -i 's/\<resolve\>/mdns_minimal [NOTFOUND=return] &/' /etc/nsswitch.conf
+
+# Use ISC's DHCP client
+sudo tee /etc/NetworkManager/conf.d/dhcp-client.conf <<EOF
+[main]
+dhcp=dhclient
+EOF
 
 # Enable mDNS resolver
 sudo tee /etc/NetworkManager/conf.d/mdns.conf <<EOF

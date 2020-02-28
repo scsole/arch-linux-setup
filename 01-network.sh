@@ -6,9 +6,11 @@
 
 PKGS=(
     'networkmanager'            # Network connection manager
+    'networkmanager-openvpn'    # NetworkManager OpenVPN plugin
     'dialog'                    # A tool to display dialog boxes from shell scripts
     'dhclient'                  # DHCP client
     'dnsmasq'                   # DNS forwarder and DHCP server
+    'avahi'                     # Service discovery using mDNS/DNS-SD
     'ufw'                       # Uncomplicated Firewall
 )
 
