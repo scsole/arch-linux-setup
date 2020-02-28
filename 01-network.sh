@@ -17,7 +17,13 @@ PKGS=(
 printf "\n Installing Network Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\n Configuring Network\n\n"
-./setup/01-network.sh
+status=$?
 
-printf "\n Network Components Done! \n\n"
+if [ $status -eq 0 ]
+then
+    printf "\n Configuring Network\n\n"
+    ./setup/01-network.sh
+    printf "\n Network Components Done\n\n"
+else
+    printf "\n Network Components Skipped\n\n"
+fi

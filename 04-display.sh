@@ -28,7 +28,12 @@ PKGS=(
 printf "\n Installing Display Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\n Configuring Display Components\n\n"
-./setup/04-xorg.sh
-
-printf "\n Display Components Done! \n\n"
+status=$?
+if [ $status -eq 0 ]
+then
+    rintf "\n Configuring Display Components\n\n"
+    ./setup/04-display.sh
+    printf "\n Display Components Done\n\n"
+else
+    printf "\n Display Components Skipped\n\n"
+fi

@@ -40,7 +40,12 @@ PKGS=(
 printf "\n Installing KDE Plasma Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\n Configuring KDE Plasma\n\n"
-./setup/05-kde.sh
-
-printf "\n KDE Plasma Components Done! \n\n"
+status=$?
+if [ $status -eq 0 ]
+then
+    printf "\n Configuring KDE Plasma\n\n"
+    ./setup/05-kde.sh
+    printf "\n KDE Plasma Components Done\n\n"
+else
+    printf "\n KDE Plasma Components Sikpped\n\n"
+fi

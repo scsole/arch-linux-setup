@@ -14,7 +14,11 @@ PKGS=(
 printf "\n Installing Printer Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\n Configuring Printing\n\n"
-./setup/06-printer.sh
-
-printf "\n Printer Components Done! \n\n"
+status=$?
+if [ $status -eq 0 ]; then
+    printf "\n Configuring Printing\n\n"
+    ./setup/06-printer.sh
+    printf "\n Printer Components Done\n\n"
+else
+    printf "\n Printer Components Skipped\n\n"
+fi

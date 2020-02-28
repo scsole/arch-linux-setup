@@ -23,7 +23,12 @@ PKGS=(
 printf "\n Installing i3 Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\n Configuring i3\n\n"
-./setup/05-i3.sh
-
-printf "\n i3 Components Done! \n\n"
+status=$?
+if [ $status -eq 0 ]
+then
+    printf "\n Configuring i3\n\n"
+    ./setup/05-i3.sh
+    printf "\n i3 Components Done\n\n"
+else
+    printf "\n i3 Components Skipped\n\n"
+fi

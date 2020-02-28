@@ -16,4 +16,11 @@ PKGS=(
 printf "\n Installing Audio Components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
-printf "\n Audio Components Done! \n\n"
+status=$?
+
+if [ $status -eq 0 ]
+then
+    printf "\n Audio Components Done\n\n"
+else
+    printf "\n Audio Components Skipped\n\n"
+fi
