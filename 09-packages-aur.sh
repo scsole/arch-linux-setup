@@ -6,10 +6,10 @@
 
 printf "\n Downloading and Installing AUR Helper \n\n"
 mkdir -p ~/source
-cd ~/src
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur
-makepkg -fsri
+cd ~/source
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 PKGS=(
     # Utilities
@@ -21,22 +21,9 @@ PKGS=(
 
     # General
     'enpass-bin'                # Multiplatform password manager
-#    'redshift-minimal'          # Adjust screen colour temperature
-#    'j4-dmenu-desktop'          # A much faster replacement for dmenu
     'urxvt-resize-font-git'     # Change font on the fly in rxvt
-
-    # Development
-
-    # Communication
-#    'whatsapp-nativefier'       # WhatsApp desktop
-
-    # Media
-    'plex-media-player'         # Plex media player
-
-    # Productivity
-    #'davinci-resolve'           # Proprietary video editor, color correction and compositing application
 )
 
 printf "\n Installing AUR Packages \n\n"
-pikaur -Syu
-pikaur -S "${PKGS[@]}" --needed
+yay -Syu
+yay -S "${PKGS[@]}" --needed
