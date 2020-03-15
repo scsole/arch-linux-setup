@@ -4,7 +4,7 @@
 # Arch User Repository (AUR) Packages
 #
 
-printf "\n Downloading and Installing AUR Helper \n\n"
+printf "\n Downloading and Installing AUR Helper\n\n"
 mkdir -p ~/source
 cd ~/source
 git clone https://aur.archlinux.org/yay.git
@@ -15,8 +15,6 @@ PKGS=(
     # Utilities
     'thermald'                  # The Linux Thermal Daemon program from 01.org
     'libinput-gestures'         # touchpad gestures using libinput
-#    'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
-#    'optimus-manager-qt'        # Qt interface for Optimus Manager
     'intel-undervolt'           # Intel CPU undervolting tool
 
     # General
@@ -24,6 +22,6 @@ PKGS=(
     'urxvt-resize-font-git'     # Change font on the fly in rxvt
 )
 
-printf "\n Installing AUR Packages \n\n"
+printf "\n Installing AUR Packages\n\n"
 yay -Syu
 yay -S "${PKGS[@]}" --needed
