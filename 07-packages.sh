@@ -131,5 +131,13 @@ PKGS=(
     'sddm'                      # Simple Desktop Display Manager
 )
 
-printf "\n Installing Packages \n\n"
-sudo pacman -S "${PKGS[@]}" --needed
+printf "\n Installing Packages\n\n"
+
+sudo pacman -S "${PKGS[@]}" --needed --noconfirm
+status=$?
+
+if [ $status -ne 0 ]; then
+    printf "\n Warning: Pacman exited with ${status}\n\n"
+else
+    printf "\n Packages installed successfully\n\n"
+fi

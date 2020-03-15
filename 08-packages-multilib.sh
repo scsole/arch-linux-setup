@@ -23,4 +23,12 @@ PKGS=(
 )
 
 printf "\n Installing Multilib Packages\n\n"
-sudo pacman -S "${PKGS[@]}" --needed
+
+sudo pacman -S "${PKGS[@]}" --needed --noconfirm
+status=$?
+
+if [ $status -ne 0 ]; then
+    printf "\n Warning: Pacman exited with ${status}\n\n"
+else
+    printf "\n Multilib packages installed successfully\n\n"
+fi

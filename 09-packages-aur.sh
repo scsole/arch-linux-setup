@@ -10,6 +10,7 @@ cd ~/source
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+yay -Syu
 
 PKGS=(
     # Utilities
@@ -23,5 +24,12 @@ PKGS=(
 )
 
 printf "\n Installing AUR Packages\n\n"
-yay -Syu
+
 yay -S "${PKGS[@]}" --needed
+status=$?
+
+if [ $status -ne 0 ]; then
+    printf "\n Warning: Yay exited with ${status}\n\n"
+else
+    printf "\n AUR Packages installed successfully\n\n"
+fi
