@@ -31,9 +31,11 @@ sudo systemctl enable thermald.service
 # User permissions
 #
 
-sudo usermod -aG uucp "$USER"   # access serial devices
-sudo usermod -aG lock "$USER"   # required for Arduino IDE
+sudo usermod -aG uucp $USER     # access serial devices
+sudo usermod -aG lock $USER     # required for Arduino IDE
 sudo usermod -aG input $USER    # required for libinput gestures
+sudo usermod -aG video $USER    # set backlight without root
+sudo usermod -aG sys $USER      # administer printers in CUPS
 
 
 
@@ -55,3 +57,30 @@ EOF
 # Create empty smb.conf for smbclient
 sudo mkdir -p /etc/samba/
 sudo touch /etc/samba/smb.conf
+
+# Allow redshift to use GeoClue2
+sudo tee -a <<EOF
+
+[redshift]
+allowed=true
+system=false
+users=
+EOF
+
+# Enable SDDM
+sudo systemctl enable sddm.service
+
+# Improve sddm
+sudo mkdir -p /etc/sddm.conf.d/
+sudo tee /etc/sddm.conf.d/theme.conf <<EOF
+[Theme]
+Current=breeze
+CursorTheme=Adwaita
+EOF
+sudo tee /etc/sddm.conf.d/numlock.conf <<EOF
+[General]
+Numlock=on
+EOF
+
+# Enable ratbagd
+sudo systemctl enable ratbagd.service
