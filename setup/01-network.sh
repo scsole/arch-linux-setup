@@ -46,6 +46,6 @@ sudo systemctl start ufw.service
 sudo ufw default deny
 sudo ufw enable
 
-# Allow mDNS and LLMNR through the firewall
+# Open some ports
 sudo ufw allow mDNS
 sudo ufw allow LLMNR
