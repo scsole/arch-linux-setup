@@ -5,7 +5,8 @@
 #
 
 PKGS=(
-    # Terminal Utilities
+    # Utilities
+    'accountsservice'           # Query and manipulate user accounts
     'bash-completion'           # Tab completion for Bash
     'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
@@ -21,6 +22,9 @@ PKGS=(
     'xdg-user-dirs'             # Manage user directories
     'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
+    'unrar'                     # The RAR uncompression program
+    'fwupd'                     # Allows session software to update firmware
+    'xorg-server-wayland'       # Run X clients under Wayland
 
     # Storage Drivers / Utilities
     'dosfstools'                # DOS filesystem utilities
@@ -56,16 +60,55 @@ PKGS=(
     'hyphen-en'                 # English hyphenation rules
     'libmythes'                 # Thesaurus
     'mythes-en'                 # English thesaurus
-    'libreoffice-fresh'         # LibreOffice
     'speedcrunch'               # A powerful calculator
 
+    # Network and Internet
+    'firefox'                   # Mozilla's Web browser
+    'filezilla'                 # FTP, FTPS, and SFTP Client
+    'transmission-qt'           # BitTorrent client
+    'signal-desktop'            # Signal private messaging
+    'telegram-desktop'          # Official Telegram Desktop client
+    'discord'                   # Voice and text chat
+    'kget'                      # Download Manager
+
+    # Applications
+    'blender'                   # 3D graphics creation suite
+    'kicad'                     # Electronic schematic and PCB design tools
+    'kicad-library'             # Kicad component and footprint libraries
+    'kicad-library-3d'          # Kicad 3D render model libraries
+    'code'                      # The Open Source build of Visual Studio Code
+    'gvim'                      # A highly configurable text editor
+    'libreoffice-fresh'         # Office suite
+    'openscad'                  # The programmers solid 3D CAD modeller
+    'rxvt-unicode'              # Terminal emulator
+    'vlc'                       # Video player
+
+    'thunar'                    # XFCE File manager
+    'thunar-volman'             # Automatic management of removable devices in Thunar
+    'thunar-media-tags-plugin'  # Features for media files in Thunar
+    'gvfs'                      # Virtual filesystem implementation for GIO
+    'tumbler'                   # D-Bus service for applications to request thumbnails
+    'evince'                    # Document viewer
+    'eog'                       # An image viewing and cataloging program
+
+    # Utilities
+    'arandr'                    # XRandR front end
+    'lxappearance'              # GTK+ theme switcher
+    'qt5ct'                     # Qt5 Configuration Utility
+    'pavucontrol-qt'            # PulseAudio volume control
+    'redshift'                  # Adjust the screen colour temperature
+    'libratbag'                 # A DBus daemon to configure gaming mice
+    'piper'                     # GTK application to configure gaming mice
+
     # Media and codecs
-    'ffmpeg'                    # Record, convert, and stream media
     'intel-media-sdk'           # Intel QuickSync support for ffmpeg
     'gst-libav'                 # Libav codecs
     'gst-plugins-good'          # PulseAudio support and additional codecs
     'gst-plugins-ugly'          # Additional codecs
     'gst-plugins-bad'           # Additional codecs
+    'ffmpeg'                    # Record, convert, and stream media
+    'ffmpegthumbnailer'         # Lightweight video thumbnailer
+    'raw-thumbnailer'           # Lightweight raw image thumbnailer
 
     # Fonts
     'noto-fonts'
@@ -74,29 +117,18 @@ PKGS=(
     'noto-fonts-extra'
     'ttf-dejavu'
     'ttf-liberation'
-    'ttf-ubuntu-font-family'
     'ttf-hack'
     'ttf-font-awesome'
+    'ttf-opensans'
 
-    # Network and Internet
-    'firefox'                   # Mozilla's Web browser
-    'filezilla'                 # FTP, FTPS, and SFTP Client
-    'transmission-gtk'          # BitTorrent client
-    'signal-desktop'            # Signal private messaging
-    'discord'                   # Voice and text chat
+    # Themes
+    'breeze'
+    'breeze-gtk'
+    'gtk3'
+    'gnome-themes-extra'
 
-    # Applications
-    'blender'                   # 3D graphics creation suite
-    'code'                      # The Open Source build of Visual Studio Code
-    'gvim'                      # A highly configurable text editor
-    'openscad'                  # The programmers solid 3D CAD modeller
-    'rxvt-unicode'              # Terminal emulator
-    'thunar'                    # XFCE File manager
-    'vlc'                       # Video player
-
-    # Utilities
-    'arandr'                    # XRandR front end
-    'lxappearance'              # GTK+ theme switcher
+    # Display manager
+    'sddm'                      # Simple Desktop Display Manager
 )
 
 printf "\n Installing Packages \n\n"
