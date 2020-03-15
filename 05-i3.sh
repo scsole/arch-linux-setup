@@ -8,16 +8,15 @@ PKGS=(
     # Base i3wm
     'i3-gaps'                   # i3wm with gaps
     'i3blocks'                  # Define blocks for i3bar
-    'i3lock'                    # Screenlocker
+    'i3lock'                    # Screen-locker
     'i3status'                  # Generates a status bar for i3bar
     'dmenu'                     # Application launcher
 
     # Useful utilities
     'dex'                       # Generate and execute desktop entries
-    'xss-lock'                  # Use external loker as X screen saver
+    'xautolock'                 # Automatic X screen-locker
     'feh'                       # Fast and light imlib2-based image viewer
     'blueman'                   # Bluetooth manager
-    'pasystray'                 # Applet for PulseAudio
     'network-manager-applet'    # Applet for NetworkManager
     'gnome-keyring'             # Stores passwords and encryption keys
     'libsecret'                 # Store and retrieve passwords and secrets
