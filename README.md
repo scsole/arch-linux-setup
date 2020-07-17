@@ -1,4 +1,8 @@
-# Arch Linux Post-installation Setup
+# Warning
+
+These scripts have not been updated for a few months. Updates are inbound soon.
+
+# Automated Arch Linux Post-installation
 
 My Arch Linux post-installation setup scripts.
 
@@ -12,10 +16,18 @@ check the contents of these scripts before running them yourself. You
 wouldn't just run any script without knowing what's inside it first, would
 you?
 
-These scripts might change frequently.
+These scripts can change frequently.
 
 ## Usage
+
+Comment out any unwanted scripts in `00-runall.sh`. Modify packages and
+configuration to your hearts content in the remaining files. 
+
 
 ```bash
 ./00-runall.sh
 ```
+
+## Spotted a mistake?
+
+Pull requests and issues on GitHub are welcome.
