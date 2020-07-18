@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #
-# Display Setup
+# Display setup
 #
 
-# Pointer libinput Xorg configuration
+# Pointer libinput Xorg config (disables mouse acceleration)
 sudo tee /etc/X11/xorg.conf.d/30-pointer.conf <<EOF
 Section "InputClass"
 	Identifier "pointer"
@@ -15,7 +15,7 @@ Section "InputClass"
 EndSection
 EOF
 
-# Touchpad libinput Xorg configuration
+# My preferred touchpad libinput Xorg config
 sudo tee /etc/X11/xorg.conf.d/30-touchpad.conf <<EOF
 Section "InputClass"
 	Identifier "touchpad"
@@ -26,26 +26,3 @@ Section "InputClass"
 	Option "NaturalScrolling" "true"
 EndSection
 EOF
-
-# NVIDIA configuration
-#sudo tee /etc/X11/xorg.conf.d/20-nvidia.conf <<EOF
-#Section "Module"
-#	Load "modesetting"
-#EndSection
-#
-#Section "Device"
-#	Identifier "nvidia"
-#	Driver "nvidia"
-#	BusID "PCI:1:0:0"
-#	Option "AllowEmptyInitialConfiguration"
-#	Option "HardDPMS" "true"
-#EndSection
-#EOF
-
-#sudo tee -a /usr/share/sddm/scripts/Xsetup <<EOF
-#
-#xrandr --setprovideroutputsource modesetting NVIDIA-0
-#xrandr --auto
-#xrandr --dpi 96
-#EOF
-
