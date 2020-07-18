@@ -33,5 +33,8 @@ sudo systemctl enable gdm.service
 
 # Set some preferences
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click 'true'
+gsettings set org.gnome.desktop.peripherals.touchpad click-method 'fingers'
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll 'true'
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 
 printf "\n GNOME components done\n\n"
