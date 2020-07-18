@@ -6,6 +6,9 @@
 
 PKGS=(
 
+    # Display manager
+    'sddm'                      # Simple Desktop Display Manager
+
     # Base Plasma desktop
     'plasma-desktop'            # The KDE Plasma Desktop
     'plasma-wayland-session'    # Plasma Wayland support
@@ -44,13 +47,31 @@ PKGS=(
     'libappindicator-gtk3'      # Fixes fuzzy icons in system tray
 )
 
-printf "\n Installing KDE Plasma Components\n\n"
+printf "\n Installing KDE Plasma components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed --noconfirm
 
 status=$?
 if [ $status -eq 0 ]
 then
-    printf "\n KDE Plasma Components Done\n\n"
+    printf "\n Beginning KDE Plasma configuration\n\n"
 else
-    printf "\n KDE Plasma Components Sikpped\n\n"
+    printf "\n KDE Plasma components failed!\n\n"
 fi
+
+
+# Enable SDDM
+sudo systemctl enable sddm.service
+
+# Improve sddm
+sudo mkdir -p /etc/sddm.conf.d/
+sudo tee /etc/sddm.conf.d/theme.conf <<EOF
+[Theme]
+Current=breeze
+CursorTheme=Adwaita
+EOF
+sudo tee /etc/sddm.conf.d/numlock.conf <<EOF
+[General]
+Numlock=on
+EOF
+
+printf "\n KDE Plasma components done\n\n"

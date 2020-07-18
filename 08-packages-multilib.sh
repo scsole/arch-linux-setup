@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Multilib (32-bit) Packages
+# Multilib (32-bit) packages
 #
 
 printf "\n Enabling Multilib Repository\n\n"
@@ -22,7 +22,7 @@ PKGS=(
     'steam'                     # Steam
 )
 
-printf "\n Installing Multilib Packages\n\n"
+printf "\n Installing multilib packages\n\n"
 
 sudo pacman -S "${PKGS[@]}" --needed --noconfirm
 status=$?

@@ -11,14 +11,14 @@ PKGS=(
     'system-config-printer'     # Printer configuration tool and status applet
 )
 
-printf "\n Installing Printer Components\n\n"
-sudo pacman -S "${PKGS[@]}" --needed
+printf "\n Installing printer components\n\n"
+sudo pacman -S "${PKGS[@]}" --needed --noconfirm
 
 status=$?
 if [ $status -eq 0 ]; then
-    printf "\n Configuring Printing\n\n"
+    printf "\n Configuring printing\n\n"
     ./setup/06-printer.sh
-    printf "\n Printer Components Done\n\n"
+    printf "\n Printer components done\n\n"
 else
-    printf "\n Printer Components Skipped\n\n"
+    printf "\n Printer components failed!\n\n"
 fi

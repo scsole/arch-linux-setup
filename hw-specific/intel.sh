@@ -23,6 +23,7 @@ PKGS=(
     # Hardware video acceleration
     'intel-media-driver'        # VA-API support for Broadwell+ iGPUs
     'libva-utils'               # VA-API utilities
+    'intel-media-sdk'           # Intel QuickSync support for ffmpeg
 
     # GPGPU
     'intel-compute-runtime'     # Neo OpenCL runtime for Broadwell+ iGPUs

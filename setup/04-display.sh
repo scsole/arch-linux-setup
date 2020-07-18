@@ -1,10 +1,12 @@
 #!/bin/bash
 
 #
-# Display setup
+# Xorg setup
 #
 
-# Pointer libinput Xorg config (disables mouse acceleration)
+# NB: The following config is only valid in Xorg.
+
+# Pointer libinput Xorg config (disable mouse acceleration)
 sudo tee /etc/X11/xorg.conf.d/30-pointer.conf <<EOF
 Section "InputClass"
 	Identifier "pointer"

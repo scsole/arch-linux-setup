@@ -23,7 +23,7 @@ PKGS=(
 )
 
 printf "\n Installing i3 packages\n\n"
-sudo pacman -S "${PKGS[@]}" --needed
+sudo pacman -S "${PKGS[@]}" --needed --noconfirm
 
 status=$?
 if [ $status -eq 0 ]

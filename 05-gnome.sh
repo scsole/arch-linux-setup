@@ -28,7 +28,7 @@ else
     printf "\n GNOME components failed!\n\n"
 fi
 
-# Start Gnome Display Manager on boot
+# Enable Gnome Display Manager
 sudo systemctl enable gdm.service
 
 # Set some preferences

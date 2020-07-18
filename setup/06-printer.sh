@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Printer Setup
+# Printer setup
 #
 
 # Enable CUPS socket

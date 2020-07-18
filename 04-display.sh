@@ -16,7 +16,7 @@ PKGS=(
 )
 
 printf "\n Installing display components\n\n"
-sudo pacman -S "${PKGS[@]}" --needed
+sudo pacman -S "${PKGS[@]}" --needed --noconfirm
 
 # Drivers
 ./hw-specific/amdgpu.sh
