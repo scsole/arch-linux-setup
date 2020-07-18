@@ -1,31 +1,43 @@
 #!/bin/bash
 
 #
-# Network Setup
+# Network setup
 #
 
 # Enable services
 sudo systemctl enable systemd-timesyncd.service
 sudo systemctl enable NetworkManager.service
-sudo systemctl enable avahi-daemon.service
+#sudo systemctl enable avahi-daemon.service
+sudo systemctl enable systemd-resolved.service
 sudo systemctl enable ufw.service
 
 # Enable network time synchronisation
 sudo timedatectl set-ntp true
 
 # Enable local network hostname resolution
-sudo sed -i 's/\<resolve\>/mdns_minimal [NOTFOUND=return] &/' /etc/nsswitch.conf
+#sudo sed -i 's/\<resolve\>/mdns_minimal [NOTFOUND=return] &/' /etc/nsswitch.conf
 
 # Use ISC's DHCP client
-sudo tee /etc/NetworkManager/conf.d/dhcp-client.conf <<EOF
-[main]
-dhcp=dhclient
-EOF
+#sudo tee /etc/NetworkManager/conf.d/dhcp-client.conf <<EOF
+#[main]
+#dhcp=dhclient
+#EOF
 
-# Enable mDNS resolver
+# Domain name resolution
+ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+# Enable mDNS and LLMNR resolver for all connections
+sudo tee -a /etc/systemd/resolved.conf <<EOF
+LLMNR=yes
+MulticastDNS=yes
+EOF
 sudo tee /etc/NetworkManager/conf.d/mdns.conf <<EOF
 [connection]
-connection.mdns=1
+connection.mdns=yes
+EOF
+sudo tee /etc/NetworkManager/conf.d/llmnr.conf <<EOF
+[connection]
+connection.llmnr=yes
 EOF
 
 # Create firewall profiles for mDNS and LLMNR
