@@ -10,6 +10,15 @@ vm.swappiness=10
 vm.vfs_cache_pressure=50
 EOF
 
+# Enable automatic swap management
+sudo tee -a /etc/systemd/swap.conf <<EOF
+
+zram_enabled=0
+zswap_enabled=1
+swapfc_enabled=1
+EOF
+sudo systemctl enable systemd-swap
+
 
 
 #
@@ -17,10 +26,10 @@ EOF
 #
 
 # Enable TLP
-sudo systemctl enable tlp.service
-sudo systemctl enable NetworkManager-dispatcher.service
-sudo systemctl mask systemd-rfkill.service
-sudo systemctl mask systemd-rfkill.socket
+#sudo systemctl enable tlp.service
+#sudo systemctl enable NetworkManager-dispatcher.service
+#sudo systemctl mask systemd-rfkill.service
+#sudo systemctl mask systemd-rfkill.socket
 
 # Enable thermald
 sudo systemctl enable thermald.service
@@ -32,9 +41,9 @@ sudo systemctl enable thermald.service
 #
 
 sudo usermod -aG uucp $USER     # access serial devices
-sudo usermod -aG lock $USER     # required for Arduino IDE
-sudo usermod -aG input $USER    # required for libinput gestures
-sudo usermod -aG video $USER    # set backlight without root
+#sudo usermod -aG lock $USER     # required for Arduino IDE
+#sudo usermod -aG input $USER    # required for libinput gestures
+#sudo usermod -aG video $USER    # set backlight without root
 sudo usermod -aG sys $USER      # administer printers in CUPS
 
 
@@ -44,7 +53,7 @@ sudo usermod -aG sys $USER      # administer printers in CUPS
 #
 
 # Libinput gestures
-libinput-gestures-setup autostart
+#libinput-gestures-setup autostart
 
 # Enable pacman colour output
 sudo sed -i '/Color/s/^#//' /etc/pacman.conf
@@ -59,28 +68,13 @@ sudo mkdir -p /etc/samba/
 sudo touch /etc/samba/smb.conf
 
 # Allow redshift to use GeoClue2
-sudo tee -a <<EOF
-
-[redshift]
-allowed=true
-system=false
-users=
-EOF
-
-# Enable SDDM
-sudo systemctl enable sddm.service
-
-# Improve sddm
-sudo mkdir -p /etc/sddm.conf.d/
-sudo tee /etc/sddm.conf.d/theme.conf <<EOF
-[Theme]
-Current=breeze
-CursorTheme=Adwaita
-EOF
-sudo tee /etc/sddm.conf.d/numlock.conf <<EOF
-[General]
-Numlock=on
-EOF
+#sudo tee -a <<EOF
+#
+#[redshift]
+#allowed=true
+#system=false
+#users=
+#EOF
 
 # Enable ratbagd
-sudo systemctl enable ratbagd.service
+#sudo systemctl enable ratbagd.service

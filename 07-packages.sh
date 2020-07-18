@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Pacman Packages
+# Pacman packages
 #
 
 PKGS=(
@@ -10,21 +10,19 @@ PKGS=(
     'bash-completion'           # Tab completion for Bash
     'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
-    'i7z'                       # Intel i7 CPU reporting tool
-    'light'                     # Change brightness on backlight-controllers
+    #'light'                     # Change brightness on backlight-controllers
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
     'rsync'                     # Sync remote files
-    'tlp'                       # Linux Advanced Power Management
-    'tlp-rdw'                   # TLP - Radio Device Wizard
+    #'tlp'                       # Linux Advanced Power Management
+    #'tlp-rdw'                   # TLP - Radio Device Wizard
+    'systemd-swap'              # Script for automated swap space configuration
     'tree'                      # Directory listing program
     'wget'                      # Retrieve remote content
-    'xdg-user-dirs'             # Manage user directories
     'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
     'unrar'                     # The RAR uncompression program
     'fwupd'                     # Allows session software to update firmware
-    'xorg-server-wayland'       # Run X clients under Wayland
 
     # Storage Drivers / Utilities
     'dosfstools'                # DOS filesystem utilities
@@ -48,7 +46,7 @@ PKGS=(
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
-    'valgrind'                  # Helps find memory-management problems in programs
+    'valgrind'                  # Helps find memory-management issues in programs
     'gdb'                       # The GNU Debugger
     'gnuplot'                   # Plotting package
 
@@ -80,28 +78,26 @@ PKGS=(
     'gvim'                      # A highly configurable text editor
     'libreoffice-fresh'         # Office suite
     'openscad'                  # The programmers solid 3D CAD modeller
-    'rxvt-unicode'              # Terminal emulator
+    #'rxvt-unicode'              # Terminal emulator
     'vlc'                       # Video player
 
-    'thunar'                    # XFCE File manager
-    'thunar-volman'             # Automatic management of removable devices in Thunar
-    'thunar-media-tags-plugin'  # Features for media files in Thunar
-    'gvfs'                      # Virtual filesystem implementation for GIO
-    'tumbler'                   # D-Bus service for applications to request thumbnails
-    'evince'                    # Document viewer
-    'eog'                       # An image viewing and cataloging program
+    #'thunar'                    # XFCE File manager
+    #'thunar-volman'             # Automatic management of removable devices in Thunar
+    #'thunar-media-tags-plugin'  # Features for media files in Thunar
+    #'gvfs'                      # Virtual filesystem implementation for GIO
+    #'tumbler'                   # D-Bus service for applications to request thumbnails
+    #'evince'                    # Document viewer
+    #'eog'                       # An image viewing and cataloging program
 
     # Utilities
-    'arandr'                    # XRandR front end
-    'lxappearance'              # GTK+ theme switcher
-    'qt5ct'                     # Qt5 Configuration Utility
-    'pavucontrol-qt'            # PulseAudio volume control
-    'redshift'                  # Adjust the screen colour temperature
-    'libratbag'                 # A DBus daemon to configure gaming mice
-    'piper'                     # GTK application to configure gaming mice
+    #'arandr'                    # XRandR front end
+    #'lxappearance'              # GTK+ theme switcher
+    #'qt5ct'                     # Qt5 Configuration Utility
+    #'pavucontrol-qt'            # PulseAudio volume control
+    #'libratbag'                 # A DBus daemon to configure gaming mice
+    #'piper'                     # GTK application to configure gaming mice
 
     # Media and codecs
-    'intel-media-sdk'           # Intel QuickSync support for ffmpeg
     'gst-libav'                 # Libav codecs
     'gst-plugins-good'          # PulseAudio support and additional codecs
     'gst-plugins-ugly'          # Additional codecs
@@ -122,16 +118,13 @@ PKGS=(
     'ttf-opensans'
 
     # Themes
-    'breeze'
-    'breeze-gtk'
-    'gtk3'
-    'gnome-themes-extra'
-
-    # Display manager
-    'sddm'                      # Simple Desktop Display Manager
+    #'breeze'
+    #'breeze-gtk'
+    #'gtk3'
+    #'gnome-themes-extra'
 )
 
-printf "\n Installing Packages\n\n"
+printf "\n Installing packages\n\n"
 
 sudo pacman -S "${PKGS[@]}" --needed --noconfirm
 status=$?
