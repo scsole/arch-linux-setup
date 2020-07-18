@@ -1,7 +1,3 @@
-# Warning
-
-These scripts have not been updated for a few months. Updates are inbound soon.
-
 # Automated Arch Linux Post-installation
 
 My Arch Linux post-installation setup scripts.
