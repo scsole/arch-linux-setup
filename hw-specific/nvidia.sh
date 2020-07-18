@@ -1,8 +1,18 @@
 #!/bin/bash
 
 #
-# NVIDIA Packages
+# NVIDIA GPU (Optimus Laptop)
 #
+
+###########
+# WARNING
+#
+# I no longer have a NVIDIA GPU. This script will NOT be updated.
+# Please check the Arch Wiki for the latest recommended procedures.
+###########
+
+# Comment out if you are sure you want to proceed
+exit 1
 
 PKGS=(
     'nvidia-dkms'               # NVIDIA drivers for Linux
@@ -16,15 +26,16 @@ PKGS=(
     'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
 )
 
-printf "\n Installing NVIDIA Packages\n\n"
+printf "\n Installing NVIDIA packages\n\n"
 yay -S "${PKGS[@]}" --needed
 
 status=$?
 if [ $status -eq 0 ]
 then
-    printf "\n Beginning NVIDIA Configuration\n\n"
+    printf "\n Beginning NVIDIA configuration\n\n"
 else
-    printf "\n NVIDIA Configuration Skiped\n\n"
+    printf "\n NVIDIA components failed!"
+    printf "\n Has an AUR helper (yay) been installed yet?\n\n"
     exit $status
 fi
 
@@ -51,4 +62,4 @@ NeedsTargets
 Exec = /bin/sh -c 'while read -r trg; do case \$trg in linux-zen) exit 0; esac; done; /usr/bin/mkinitcpio -P'
 EOF
 
-printf "\n NVIDIA Components Done\n\n"
+printf "\n NVIDIA components done\n\n"
