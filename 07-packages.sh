@@ -126,7 +126,7 @@ PKGS=(
 
 printf "\n Installing packages\n\n"
 
-sudo pacman -S "${PKGS[@]}" --needed --noconfirm
+sudo pacman -S "${PKGS[@]}" --needed
 status=$?
 
 if [ $status -ne 0 ]; then

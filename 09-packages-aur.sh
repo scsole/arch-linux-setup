@@ -5,8 +5,8 @@
 #
 
 printf "\n Downloading and installing AUR helper\n\n"
-mkdir -p ~/source
-cd ~/source
+mkdir -p ~/Source
+cd ~/Source
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si

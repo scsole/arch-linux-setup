@@ -3,7 +3,7 @@
 ./01-network.sh
 ./02-audio.sh
 ./03-bluetooth.sh
-./04-xorg.sh
+./04-display.sh
 ./05-gnome.sh
 #./05-i3.sh
 #./05-kde.sh
