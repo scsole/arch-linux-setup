@@ -22,15 +22,21 @@ PKGS=(
     'libsecret'                 # Store and retrieve passwords and secrets
 )
 
-printf "\n Installing i3 Components\n\n"
+printf "\n Installing i3 packages\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
 status=$?
 if [ $status -eq 0 ]
 then
-    printf "\n Configuring i3\n\n"
-    ./setup/05-i3.sh
-    printf "\n i3 Components Done\n\n"
+    printf "\n Beginning i3 configuration\n\n"
 else
-    printf "\n i3 Components Skipped\n\n"
+    printf "\n i3 components failed!"
+    exit $status
 fi
+
+# Configure xinit
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+sed -i '/twm/,/exec/s/^/#/' ~/.xinitrc
+echo exec i3 >> ~/.xinitrc
+
+printf "\n i3 Components Done\n\n"
