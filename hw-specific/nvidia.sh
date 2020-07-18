@@ -17,12 +17,12 @@ exit 1
 PKGS=(
     'nvidia-dkms'               # NVIDIA drivers for Linux
     'nvidia-utils'              # NVIDIA driver utilities
-#    'lib32-nvidia-utils'        # 32-bit NVIDIA driver utilities
     'cuda'                      # NVIDIA's GPU programming toolkit
     
     # Helpers
     'nvidia-settings'           # Tool for configuring the NVIDIA graphics driver
-    'vdpauinfo'                 # Query capabilities of a VDPAU device
+    'vdpauinfo'                 # VDPAU utilities
+    'clinfo'                    # OpenCL utilities
     'optimus-manager'           # Utility to handle GPU switching on Optimus laptops
 )
 

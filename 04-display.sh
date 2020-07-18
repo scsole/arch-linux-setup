@@ -13,17 +13,13 @@ PKGS=(
     # Display drivers
     'mesa'                      # Open-source OpenGL implementation
     'vulkan-icd-loader'         # Vulkan Installable Client Driver (ICD) Loader
-
-    # Hardware video acceleration
-    'libva-utils'               # Intel VA-API Media Applications and Scripts for libva
-
-    # GPGPU
-    'clinfo'                    # List OpenCL platforms, devices present and ICD loader properties
 )
 
 printf "\n Installing display components\n\n"
 sudo pacman -S "${PKGS[@]}" --needed
 
+# Drivers
+./hw-specific/amdgpu.sh
 #./hw-specific/intel.sh
 #./hw-specific/nvidia.sh
 

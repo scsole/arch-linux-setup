@@ -16,15 +16,17 @@ exit 1
 
 PKGS=(
     # Display drivers
-    'xf86-video-intel'          # Intel video drivers
+    'mesa'                      # Open-source OpenGL implementation
+    'xf86-video-intel'          # Intel video driver
     'vulkan-intel'              # Intel's Vulkan mesa driver
 
     # Hardware video acceleration
     'intel-media-driver'        # VA-API support for Broadwell+ iGPUs
-    'libva-utils'               # Intel VA-API Media Applications and Scripts for libva
+    'libva-utils'               # VA-API utilities
 
     # GPGPU
     'intel-compute-runtime'     # Neo OpenCL runtime for Broadwell+ iGPUs
+    'clinfo'                    # OpenCL utilities
 )
 
 printf "\n Installing Intel packages\n\n"
