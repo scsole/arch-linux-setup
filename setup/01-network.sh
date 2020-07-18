@@ -14,7 +14,7 @@ sudo systemctl enable ufw.service
 sudo timedatectl set-ntp true
 
 # Domain name resolution
-ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 # Enable mDNS and LLMNR resolver for all connections
 sudo tee -a /etc/systemd/resolved.conf <<EOF
