@@ -1,7 +1,3 @@
-# Warning
-
-These scripts have not been updated for a few months. Updates are inbound soon.
-
 # Automated Arch Linux Post-installation
 
 My Arch Linux post-installation setup scripts.
@@ -30,4 +26,4 @@ configuration to your hearts content in the remaining files.
 
 ## Spotted a mistake?
 
-Pull requests and issues on GitHub are welcome.
+Issues on GitHub are welcome.
