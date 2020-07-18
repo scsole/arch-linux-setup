@@ -18,6 +18,7 @@ ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 # Enable mDNS and LLMNR resolver for all connections
 sudo tee -a /etc/systemd/resolved.conf <<EOF
+
 LLMNR=yes
 MulticastDNS=yes
 EOF

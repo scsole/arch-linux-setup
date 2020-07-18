@@ -24,6 +24,8 @@ configuration to your hearts content in the remaining files.
 ./00-runall.sh
 ```
 
+Or just run each script separately.
+
 ## Spotted a mistake?
 
-Pull requests and issues on GitHub are welcome.
+Issues on GitHub are welcome.
