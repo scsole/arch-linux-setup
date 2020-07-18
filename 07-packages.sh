@@ -80,6 +80,7 @@ PKGS=(
     'openscad'                  # The programmers solid 3D CAD modeller
     #'rxvt-unicode'              # Terminal emulator
     'vlc'                       # Video player
+    'pavucontrol'		# PulseAudio GTK volume control tool
 
     #'thunar'                    # XFCE File manager
     #'thunar-volman'             # Automatic management of removable devices in Thunar
