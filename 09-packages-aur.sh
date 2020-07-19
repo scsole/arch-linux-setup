@@ -16,10 +16,14 @@ PKGS=(
     # Utilities
     'thermald'                  # The Linux Thermal Daemon program from 01.org
     #'libinput-gestures'         # touchpad gestures using libinput
+    'starship-bin'              # A super awesome prompt
 
     # General
     'enpass-bin'                # Multiplatform password manager
     #'urxvt-resize-font-git'     # Change font on the fly in rxvt
+
+    # Development
+    'android-studio'            # The official Android IDE
 )
 
 printf "\n Installing AUR packages\n\n"
