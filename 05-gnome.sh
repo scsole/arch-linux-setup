@@ -15,6 +15,8 @@ PKGS=(
     # Extra GNOME packages
     'gnome-tweaks'              # GNOME Tweak Tool
     'xorg-server-xwayland'      # Run X clients under Wayland
+    'chrome-gnome-shell'        # Browser connector for extensions.gnome.org
+    'libappindicator-gtk3'      # Better app indicator support
 )
 
 printf "\n Installing GNOME components\n\n"
