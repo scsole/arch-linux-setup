@@ -13,6 +13,7 @@ PKGS=(
     #'light'                     # Change brightness on backlight-controllers
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
+    'reflector'                 # Retrieve and filter the latest Pacman mirror list
     'rsync'                     # Sync remote files
     #'tlp'                       # Linux Advanced Power Management
     #'tlp-rdw'                   # TLP - Radio Device Wizard
