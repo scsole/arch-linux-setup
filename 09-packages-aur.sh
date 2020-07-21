@@ -24,6 +24,9 @@ PKGS=(
 
     # Development
     'android-studio'            # The official Android IDE
+
+    # Themes
+    'adwaita-qt'                # Native adwaita theme for Qt applications
 )
 
 printf "\n Installing AUR packages\n\n"
