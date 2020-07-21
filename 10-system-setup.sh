@@ -40,11 +40,12 @@ sudo systemctl enable thermald.service
 # User permissions
 #
 
-sudo usermod -aG uucp $USER     # access serial devices
-#sudo usermod -aG lock $USER     # required for Arduino IDE
-#sudo usermod -aG input $USER    # required for libinput gestures
-#sudo usermod -aG video $USER    # set backlight without root
-sudo usermod -aG sys $USER      # administer printers in CUPS
+sudo usermod -aG uucp $USER      # access serial devices
+#sudo usermod -aG lock $USER      # required for Arduino IDE
+#sudo usermod -aG input $USER     # required for libinput gestures
+#sudo usermod -aG video $USER     # set backlight without root
+sudo usermod -aG sys $USER       # administer printers in CUPS
+sudo usermod -aG vboxusers $USER # access USB devices in gest VMs
 
 
 

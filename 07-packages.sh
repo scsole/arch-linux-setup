@@ -8,7 +8,7 @@ PKGS=(
     # Utilities
     'accountsservice'           # Query and manipulate user accounts
     'bash-completion'           # Tab completion for Bash
-    'cpupower'                  # Utilities to assist with CPU frequency scaling
+    #'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
     #'light'                     # Change brightness on backlight-controllers
     'neofetch'                  # Display system information
@@ -50,6 +50,9 @@ PKGS=(
     'valgrind'                  # Helps find memory-management issues in programs
     'gdb'                       # The GNU Debugger
     'gnuplot'                   # Plotting package
+    'virtualbox'                # Virtualization software
+    'virtualbox-host-modules-arch' # Virtualbox host kernel modules for Arch Kernel
+    'vagrant'                   # Manage and configure virtualised environments
 
     # Productivity
     'hunspell'                  # Spellchecker
@@ -68,7 +71,7 @@ PKGS=(
     'signal-desktop'            # Signal private messaging
     'telegram-desktop'          # Official Telegram Desktop client
     'discord'                   # Voice and text chat
-    'kget'                      # Download Manager
+    #'kget'                      # Download Manager
 
     # Applications
     'blender'                   # 3D graphics creation suite
