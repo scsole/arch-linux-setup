@@ -33,10 +33,17 @@ fi
 # Enable Gnome Display Manager
 sudo systemctl enable gdm.service
 
-# Set some preferences
+# Set Gnome  preferences
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click 'true'
 gsettings set org.gnome.desktop.peripherals.touchpad click-method 'fingers'
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll 'true'
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,close"
+
+# To set GDM preferences run
+#sudo machinectl shell gdm@ /bin/bash
+#gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click 'true'
+#exit
+
 
 printf "\n GNOME components done\n\n"
