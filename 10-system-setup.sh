@@ -32,7 +32,7 @@ sudo systemctl enable systemd-swap
 #sudo systemctl mask systemd-rfkill.socket
 
 # Enable thermald
-sudo systemctl enable thermald.service
+#sudo systemctl enable thermald.service
 
 
 
@@ -42,7 +42,7 @@ sudo systemctl enable thermald.service
 
 sudo usermod -aG uucp $USER      # access serial devices
 #sudo usermod -aG lock $USER      # required for Arduino IDE
-#sudo usermod -aG input $USER     # required for libinput gestures
+sudo usermod -aG input $USER     # required for libinput gestures and fingerprint sensor
 #sudo usermod -aG video $USER     # set backlight without root
 sudo usermod -aG sys $USER       # administer printers in CUPS
 sudo usermod -aG vboxusers $USER # access USB devices in gest VMs
