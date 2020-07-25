@@ -8,9 +8,10 @@ PKGS=(
     # Utilities
     'accountsservice'           # Query and manipulate user accounts
     'bash-completion'           # Tab completion for Bash
-    'cpupower'                  # Utilities to assist with CPU frequency scaling
+    #'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
     #'light'                     # Change brightness on backlight-controllers
+    'lm_sensors'                # Hardware monitoring tools
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
     'reflector'                 # Retrieve and filter the latest Pacman mirror list
@@ -24,6 +25,8 @@ PKGS=(
     'unzip'                     # Extract and view files in .zip archives
     'unrar'                     # The RAR uncompression program
     'fwupd'                     # Allows session software to update firmware
+    'usbutils'                  # USB Device Utilities
+    'fprintd'                   # Service to access fingerprint readers
 
     # Storage Drivers / Utilities
     'dosfstools'                # DOS filesystem utilities
@@ -43,13 +46,16 @@ PKGS=(
     'android-udev'              # Udev rules to connect Android devices
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
-    'jdk-openjdk'               # Java development kit
+    'jdk11-openjdk'             # Java development kit 11
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
     'valgrind'                  # Helps find memory-management issues in programs
     'gdb'                       # The GNU Debugger
     'gnuplot'                   # Plotting package
+    'virtualbox'                # Virtualization software
+    'virtualbox-host-modules-arch' # Virtualbox host kernel modules for Arch Kernel
+    'vagrant'                   # Manage and configure virtualised environments
 
     # Productivity
     'hunspell'                  # Spellchecker
@@ -64,11 +70,11 @@ PKGS=(
     # Network and Internet
     'firefox'                   # Mozilla's Web browser
     'filezilla'                 # FTP, FTPS, and SFTP Client
-    'transmission-qt'           # BitTorrent client
+    'transmission-gtk'          # BitTorrent client
     'signal-desktop'            # Signal private messaging
     'telegram-desktop'          # Official Telegram Desktop client
     'discord'                   # Voice and text chat
-    'kget'                      # Download Manager
+    #'kget'                      # Download Manager
 
     # Applications
     'blender'                   # 3D graphics creation suite
@@ -107,6 +113,7 @@ PKGS=(
     'ffmpeg'                    # Record, convert, and stream media
     'ffmpegthumbnailer'         # Lightweight video thumbnailer
     'raw-thumbnailer'           # Lightweight raw image thumbnailer
+    'pulseeffects'              # Audio effects for PA applications
 
     # Fonts
     'noto-fonts'

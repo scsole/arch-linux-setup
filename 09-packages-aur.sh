@@ -14,9 +14,10 @@ yay -Syu
 
 PKGS=(
     # Utilities
-    'thermald'                  # The Linux Thermal Daemon program from 01.org
+    #'thermald'                  # The Linux Thermal Daemon program from 01.org
     #'libinput-gestures'         # touchpad gestures using libinput
     'starship-bin'              # A super awesome prompt
+    'libfprint-tod-git'         # TOD library for fingerprint readers
 
     # General
     'enpass-bin'                # Multiplatform password manager
@@ -24,6 +25,10 @@ PKGS=(
 
     # Development
     #'android-studio'            # The official Android IDE
+    'insomnia'                  # HTTP and GraphQL client
+
+    # Themes
+    'adwaita-qt'                # Native adwaita theme for Qt applications
 )
 
 printf "\n Installing AUR packages\n\n"
