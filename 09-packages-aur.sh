@@ -23,7 +23,7 @@ PKGS=(
     #'urxvt-resize-font-git'     # Change font on the fly in rxvt
 
     # Development
-    'android-studio'            # The official Android IDE
+    #'android-studio'            # The official Android IDE
 )
 
 printf "\n Installing AUR packages\n\n"
