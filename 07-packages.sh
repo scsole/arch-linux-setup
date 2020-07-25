@@ -11,6 +11,7 @@ PKGS=(
     #'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
     #'light'                     # Change brightness on backlight-controllers
+    'lm_sensors'                # Hardware monitoring tools
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
     'reflector'                 # Retrieve and filter the latest Pacman mirror list
@@ -24,6 +25,8 @@ PKGS=(
     'unzip'                     # Extract and view files in .zip archives
     'unrar'                     # The RAR uncompression program
     'fwupd'                     # Allows session software to update firmware
+    'usbutils'                  # USB Device Utilities
+    'fprintd'                   # Service to access fingerprint readers
 
     # Storage Drivers / Utilities
     'dosfstools'                # DOS filesystem utilities
@@ -67,7 +70,7 @@ PKGS=(
     # Network and Internet
     'firefox'                   # Mozilla's Web browser
     'filezilla'                 # FTP, FTPS, and SFTP Client
-    'transmission-qt'           # BitTorrent client
+    'transmission-gtk'          # BitTorrent client
     'signal-desktop'            # Signal private messaging
     'telegram-desktop'          # Official Telegram Desktop client
     'discord'                   # Voice and text chat
@@ -110,6 +113,7 @@ PKGS=(
     'ffmpeg'                    # Record, convert, and stream media
     'ffmpegthumbnailer'         # Lightweight video thumbnailer
     'raw-thumbnailer'           # Lightweight raw image thumbnailer
+    'pulseeffects'              # Audio effects for PA applications
 
     # Fonts
     'noto-fonts'
