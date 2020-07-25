@@ -46,7 +46,7 @@ PKGS=(
     'android-udev'              # Udev rules to connect Android devices
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
-    'jdk-openjdk'               # Java development kit
+    'jdk11-openjdk'             # Java development kit 11
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
