@@ -42,9 +42,9 @@ gsettings set org.gnome.desktop.peripherals.mouse speed 0.1
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,close"
 
 # To set GDM preferences run
-#sudo machinectl shell gdm@ /bin/bash
-#gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click 'true'
-#exit
+#    sudo machinectl shell gdm@ /bin/bash
+#    gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click 'true'
+#    exit
 
 
 printf "\n GNOME components done\n\n"
