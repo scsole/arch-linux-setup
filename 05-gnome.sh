@@ -37,6 +37,7 @@ sudo systemctl enable gdm.service
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click 'true'
 gsettings set org.gnome.desktop.peripherals.touchpad click-method 'fingers'
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll 'true'
+gsettings set org.gnome.desktop.peripherals.touchpad speed 0.2
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.1
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,close"
