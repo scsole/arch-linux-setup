@@ -88,6 +88,7 @@ PKGS=(
     #'rxvt-unicode'              # Terminal emulator
     'vlc'                       # Video player
     'pavucontrol'		# PulseAudio GTK volume control tool
+    'pulseeffects'              # Audio effects for PA applications
 
     #'thunar'                    # XFCE File manager
     #'thunar-volman'             # Automatic management of removable devices in Thunar
@@ -113,7 +114,6 @@ PKGS=(
     'ffmpeg'                    # Record, convert, and stream media
     'ffmpegthumbnailer'         # Lightweight video thumbnailer
     'raw-thumbnailer'           # Lightweight raw image thumbnailer
-    'pulseeffects'              # Audio effects for PA applications
 
     # Fonts
     'noto-fonts'
