@@ -6,6 +6,7 @@
 ./04-display.sh
 ./05-gnome.sh
 #./05-i3.sh
+./05-sway.sh
 #./05-kde.sh
 ./06-printer.sh
 ./07-packages.sh
