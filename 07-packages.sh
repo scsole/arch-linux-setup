@@ -10,7 +10,7 @@ PKGS=(
     'bash-completion'           # Tab completion for Bash
     #'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
-    #'light'                     # Change brightness on backlight-controllers
+    'light'                     # Change backlight brightness
     'lm_sensors'                # Hardware monitoring tools
     'neofetch'                  # Display system information
     'openssh'                   # Remote login with the SSH protocol
@@ -27,6 +27,7 @@ PKGS=(
     'fwupd'                     # Allows session software to update firmware
     'usbutils'                  # USB Device Utilities
     'fprintd'                   # Service to access fingerprint readers
+    'playerctl'                 # Media player controller for various players
 
     # Storage Drivers / Utilities
     'dosfstools'                # DOS filesystem utilities

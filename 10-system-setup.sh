@@ -43,10 +43,15 @@ sudo systemctl enable systemd-swap
 sudo usermod -aG uucp $USER      # access serial devices
 #sudo usermod -aG lock $USER      # required for Arduino IDE
 sudo usermod -aG input $USER     # required for libinput gestures and fingerprint sensor
-#sudo usermod -aG video $USER     # set backlight without root
+sudo usermod -aG video $USER     # set backlight without root
 sudo usermod -aG sys $USER       # administer printers in CUPS
 sudo usermod -aG vboxusers $USER # access USB devices in gest VMs
 
+# Allow users in the `video` group  to change brightness
+sudo tee /etc/udev/rules.d/backlight.rules <<EOF
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chmod g+w /sys/class/backlight/%k/brightness"
+EOF
 
 
 #
