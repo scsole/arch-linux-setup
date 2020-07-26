@@ -27,8 +27,19 @@ sudo pacman -S "${PKGS[@]}" --needed
 status=$?
 if [ $status -eq 0 ]
 then
-    printf "\n AMDGPU components done\n\n"
+    printf "\n Beginning AMDGPU configuration\n\n"
 else
     printf "\n AMDGPU components failed!\n\n"
     exit $status
 fi
+
+# Enable variable refresh rate (Xorg)
+sudo tee /etc/X11/xorg.conf.d/20-amdgpu.conf <<EOF
+Section "Device"
+     Identifier "AMD"
+     Driver "amdgpu"
+     Option "VariableRefresh" "true"
+EndSection
+EOF
+
+printf "\n AMDGPU components done\n\n"
