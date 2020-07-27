@@ -18,6 +18,7 @@ PKGS=(
     #'libinput-gestures'         # touchpad gestures using libinput
     'starship-bin'              # A super awesome prompt
     'libfprint-tod-git'         # TOD library for fingerprint readers
+    'gammastep'                 # Adjusts the color temperature of your screen
 
     # General
     'enpass-bin'                # Multiplatform password manager
