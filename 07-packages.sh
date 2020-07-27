@@ -47,6 +47,7 @@ PKGS=(
     'android-udev'              # Udev rules to connect Android devices
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
+    'git-lfs'                   # Git Large File Storage extension
     'jdk11-openjdk'             # Java development kit 11
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
@@ -57,6 +58,7 @@ PKGS=(
     'virtualbox'                # Virtualization software
     'virtualbox-host-modules-arch' # Virtualbox host kernel modules for Arch Kernel
     'vagrant'                   # Manage and configure virtualised environments
+    'sqlitebrowser'             # SQLite Database browser
 
     # Productivity
     'hunspell'                  # Spellchecker

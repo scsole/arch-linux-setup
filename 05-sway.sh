@@ -10,6 +10,9 @@ PKGS=(
     'swayidle'                  # Idle management daemon for Wayland
     'dmenu'                     # Application launcher
     'alacritty'                 # Cross-platform, GPU-accelerated terminal emulator
+    'grim'                      # Screenshot utility for Wayland
+    'mako'                      # Lightweight notification daemon for Wayland
+    'waybar'                    # Highly customizable Wayland bar for Sway
 )
 
 printf "\n Installing Sway packages\n\n"
