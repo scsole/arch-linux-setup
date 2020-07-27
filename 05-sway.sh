@@ -11,6 +11,7 @@ PKGS=(
     'dmenu'                     # Application launcher
     'alacritty'                 # Cross-platform, GPU-accelerated terminal emulator
     'grim'                      # Screenshot utility for Wayland
+    'slurp'                     # Select a region in Wayland compositors
     'mako'                      # Lightweight notification daemon for Wayland
     'waybar'                    # Highly customizable Wayland bar for Sway
 )
