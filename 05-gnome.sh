@@ -14,6 +14,7 @@ PKGS=(
 
     # Extra GNOME packages
     'gnome-tweaks'              # GNOME Tweak Tool
+    'gthumb'                    # Image browser and viewer for the GNOME Desktop
     'xorg-server-xwayland'      # Run X clients under Wayland
     'chrome-gnome-shell'        # Browser connector for extensions.gnome.org
     'libappindicator-gtk3'      # Better app indicator support
