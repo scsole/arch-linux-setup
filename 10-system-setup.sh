@@ -13,8 +13,6 @@ EOF
 # Enable automatic swap management
 sudo tee -a /etc/systemd/swap.conf <<EOF
 
-zram_enabled=0
-zswap_enabled=1
 swapfc_enabled=1
 EOF
 sudo systemctl enable systemd-swap
