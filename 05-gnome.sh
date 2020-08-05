@@ -42,6 +42,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad speed 0.2
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.1
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,close"
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 
 # To set GDM preferences run
 #    sudo machinectl shell gdm@ /bin/bash
