@@ -45,6 +45,8 @@ PKGS=(
     'astyle'                    # Formatter for C, C++, C#, and Java source code
     'android-tools'             # Android platform tools
     'android-udev'              # Udev rules to connect Android devices
+    'docker'                    # Pack, ship and run applications as a lightweight container
+    'docker-compose'            # Fast, isolated development environments using Docker
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
     'git-lfs'                   # Git Large File Storage extension

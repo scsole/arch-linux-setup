@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #
 # System
 #
@@ -18,7 +19,6 @@ EOF
 sudo systemctl enable systemd-swap
 
 
-
 #
 # Power management
 #
@@ -33,17 +33,17 @@ sudo systemctl enable systemd-swap
 #sudo systemctl enable thermald.service
 
 
-
 #
 # User permissions
 #
 
-sudo usermod -aG uucp $USER      # access serial devices
-#sudo usermod -aG lock $USER      # required for Arduino IDE
-sudo usermod -aG input $USER     # required for libinput gestures and fingerprint sensor
-sudo usermod -aG video $USER     # set backlight without root
-sudo usermod -aG sys $USER       # administer printers in CUPS
-sudo usermod -aG vboxusers $USER # access USB devices in gest VMs
+# sudo usermod -aG lock $USER         # Required for Arduino IDE
+sudo usermod -aG uucp $USER         # Access serial devices
+sudo usermod -aG input $USER        # Required for libinput gestures and fingerprint sensor
+sudo usermod -aG video $USER        # Set backlight without root
+sudo usermod -aG sys $USER          # Administer printers in CUPS
+sudo usermod -aG docker $USER       # Use `docker` without root
+sudo usermod -aG vboxusers $USER    # Access USB devices in gest VMs
 
 # Allow users in the `video` group  to change brightness
 sudo tee /etc/udev/rules.d/backlight.rules <<EOF
@@ -57,7 +57,7 @@ EOF
 #
 
 # Libinput gestures
-#libinput-gestures-setup autostart
+# libinput-gestures-setup autostart
 
 # Enable pacman colour output
 sudo sed -i '/Color/s/^#//' /etc/pacman.conf
@@ -71,14 +71,10 @@ EOF
 sudo mkdir -p /etc/samba/
 sudo touch /etc/samba/smb.conf
 
-# Allow redshift to use GeoClue2
-#sudo tee -a <<EOF
-#
-#[redshift]
-#allowed=true
-#system=false
-#users=
-#EOF
 
-# Enable ratbagd
-#sudo systemctl enable ratbagd.service
+#
+# Services
+#
+
+# sudo systemctl enable ratbagd.service
+sudo systemctl enable docker.service
