@@ -40,7 +40,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method 'fingers'
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll 'true'
 gsettings set org.gnome.desktop.peripherals.touchpad speed 0.2
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
-gsettings set org.gnome.desktop.peripherals.mouse speed 0.5
+gsettings set org.gnome.desktop.peripherals.mouse speed 0
 gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,close"
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 gsettings set org.gnome.desktop.media-handling automount false
