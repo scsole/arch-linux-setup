@@ -16,6 +16,7 @@ PKGS=(
     # Utilities
     #'thermald'                  # The Linux Thermal Daemon program from 01.org
     #'libinput-gestures'         # touchpad gestures using libinput
+    'corrupter-bin'             # Simple image glitcher for nice looking lockscreen backgrounds
     'starship-bin'              # A super awesome prompt
     'libfprint-tod-git'         # TOD library for fingerprint readers
     'gammastep'                 # Adjusts the color temperature of your screen
