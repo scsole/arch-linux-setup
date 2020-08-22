@@ -10,7 +10,7 @@ PKGS=(
     'bash-completion'           # Tab completion for Bash
     #'cpupower'                  # Utilities to assist with CPU frequency scaling
     'htop'                      # Interactive process viewer
-    'jk'                        # Command-line JSON processor
+    'jq'                        # Command-line JSON processor
     'light'                     # Change backlight brightness
     'lm_sensors'                # Hardware monitoring tools
     'neofetch'                  # Display system information
