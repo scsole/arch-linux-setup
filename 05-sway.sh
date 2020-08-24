@@ -8,7 +8,7 @@ PKGS=(
     'sway'                      # Tiling Wayland compositor
     'swaylock'                  # Screen locker for Wayland
     'swayidle'                  # Idle management daemon for Wayland
-    'bemenu'                    # Application launcher
+    'wofi'                      # Application launcher
     'alacritty'                 # Cross-platform, GPU-accelerated terminal emulator
     'grim'                      # Screenshot utility for Wayland
     'slurp'                     # Select a region in Wayland compositors
