@@ -91,9 +91,7 @@ PKGS=(
     'gvim'                      # A highly configurable text editor
     'libreoffice-fresh'         # Office suite
     'openscad'                  # The programmers solid 3D CAD modeller
-    #'rxvt-unicode'              # Terminal emulator
-    'vlc'                       # Video player
-    'pavucontrol'		# PulseAudio GTK volume control tool
+    'pavucontrol'               # PulseAudio GTK volume control tool
     'pulseeffects'              # Audio effects for PA applications
 
     #'thunar'                    # XFCE File manager
