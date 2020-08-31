@@ -141,7 +141,7 @@ if [ $LAPTOP == true ]; then
     PKGS+=(
         'tlp'                       # Linux Advanced Power Management
         'tlp-rdw'                   # TLP - Radio Device Wizard
-        'thermald'                  # Daemon to prevent overheating
+        # 'thermald'                  # Daemon to prevent overheating
     )
 fi
 

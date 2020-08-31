@@ -37,7 +37,7 @@ if [ $LAPTOP == true ]; then
     sudo systemctl mask systemd-rfkill.socket
 
     # Enable thermald
-    sudo systemctl enable thermald.service
+    # sudo systemctl enable thermald.service
 
     # Enable auto-cpufreq
     sudo systemctl enable auto-cpufreq
