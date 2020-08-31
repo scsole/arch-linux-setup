@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. ./env
 
 #
 # System
@@ -18,19 +19,29 @@ swapfc_enabled=1
 EOF
 sudo systemctl enable systemd-swap
 
+# Load all AppArmor profiles on startup
+sudo systemctl enable apparmor.service
+
 
 #
 # Power management
 #
 
-# Enable TLP
-#sudo systemctl enable tlp.service
-#sudo systemctl enable NetworkManager-dispatcher.service
-#sudo systemctl mask systemd-rfkill.service
-#sudo systemctl mask systemd-rfkill.socket
+sudo sensors-detect --auto
 
-# Enable thermald
-#sudo systemctl enable thermald.service
+if [ $LAPTOP == true ]; then
+    # Enable TLP
+    sudo systemctl enable tlp.service
+    sudo systemctl enable NetworkManager-dispatcher.service
+    sudo systemctl mask systemd-rfkill.service
+    sudo systemctl mask systemd-rfkill.socket
+
+    # Enable thermald
+    sudo systemctl enable thermald.service
+
+    # Enable auto-cpufreq
+    sudo systemctl enable auto-cpufreq
+fi
 
 
 #

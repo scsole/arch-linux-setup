@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. ./env
+
 #
 # Pacman packages
 #
@@ -7,8 +9,8 @@
 PKGS=(
     # Utilities
     'accountsservice'           # Query and manipulate user accounts
+    'apparmor'                  # Userspace tools and libraries to control AppArmor
     'bash-completion'           # Tab completion for Bash
-    #'thermald'                  # Daemon to prevent overheating
     'htop'                      # Interactive process viewer
     'jq'                        # Command-line JSON processor
     'light'                     # Change backlight brightness
@@ -17,8 +19,6 @@ PKGS=(
     'openssh'                   # Remote login with the SSH protocol
     'reflector'                 # Retrieve and filter the latest Pacman mirror list
     'rsync'                     # Sync remote files
-    #'tlp'                       # Linux Advanced Power Management
-    #'tlp-rdw'                   # TLP - Radio Device Wizard
     'systemd-swap'              # Script for automated swap space configuration
     'tree'                      # Directory listing program
     'wget'                      # Retrieve remote content
@@ -136,6 +136,14 @@ PKGS=(
     #'gtk3'
     #'gnome-themes-extra'
 )
+
+if [ $LAPTOP == true ]; then
+    PKGS+=(
+        'tlp'                       # Linux Advanced Power Management
+        'tlp-rdw'                   # TLP - Radio Device Wizard
+        'thermald'                  # Daemon to prevent overheating
+    )
+fi
 
 printf "\n Installing packages\n\n"
 

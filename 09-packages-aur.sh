@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. ./env
+
 #
 # Arch User Repository (AUR) packages
 #
@@ -16,11 +18,8 @@ fi
 
 PKGS=(
     # Utilities
-    #'auto-cpufreq-git'          # Automatic CPU speed & power optimizer
-    #'libinput-gestures'         # touchpad gestures using libinput
     'corrupter-bin'             # Simple image glitcher for nice looking lockscreen backgrounds
     'starship-bin'              # A super awesome prompt
-    #'libfprint-tod-git'         # TOD library for fingerprint readers
     'gammastep'                 # Adjusts the color temperature of your screen
 
     # General
@@ -33,6 +32,14 @@ PKGS=(
     # Themes
     'adwaita-qt'                # Native adwaita theme for Qt applications
 )
+
+if [ $LAPTOP == true ]; then
+    PKGS+=(
+        'auto-cpufreq-git'          # Automatic CPU speed & power optimizer
+        'libinput-gestures'         # touchpad gestures using libinput
+        'libfprint-tod-git'         # TOD library for fingerprint readers
+    )
+fi
 
 printf "\n Installing AUR packages\n\n"
 
