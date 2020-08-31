@@ -8,7 +8,7 @@ PKGS=(
     # Utilities
     'accountsservice'           # Query and manipulate user accounts
     'bash-completion'           # Tab completion for Bash
-    #'cpupower'                  # Utilities to assist with CPU frequency scaling
+    #'thermald'                  # Daemon to prevent overheating
     'htop'                      # Interactive process viewer
     'jq'                        # Command-line JSON processor
     'light'                     # Change backlight brightness
@@ -59,7 +59,7 @@ PKGS=(
     'gdb'                       # The GNU Debugger
     'gnuplot'                   # Plotting package
     'virtualbox'                # Virtualization software
-    'virtualbox-host-modules-arch' # Virtualbox host kernel modules for Arch Kernel
+    'virtualbox-host-dkms'      # Virtualbox host kernel modules
     'vagrant'                   # Manage and configure virtualised environments
     'sqlitebrowser'             # SQLite Database browser
 
