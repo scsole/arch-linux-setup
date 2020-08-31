@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./env
+. ./.env
 
 #
 # Arch User Repository (AUR) packages

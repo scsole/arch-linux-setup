@@ -16,15 +16,8 @@ These scripts can change frequently.
 
 ## Usage
 
-Comment out any unwanted scripts in `00-runall.sh`. Modify packages and
-configuration to your hearts content in the remaining files. 
-
-
-```bash
-./00-runall.sh
-```
-
-Or just run each script separately.
+Copy `.env.example` to `.env` and configure as required. Modify packages and
+configuration to your hearts content. Then run run your desired scripts.
 
 ## Spotted a mistake?
 
