@@ -82,6 +82,13 @@ EOF
 sudo mkdir -p /etc/samba/
 sudo touch /etc/samba/smb.conf
 
+# Hide LSP Plugins from GNOME application launcher
+if command -v pulseeffects &> /dev/null; then
+    echo "[Desktop Entry]
+    Hidden=true" > /tmp/hidden
+    find /usr -name "*lsp_plug*desktop" 2>/dev/null | cut -f 5 -d '/' | xargs -I {} cp /tmp/hidden ~/.local/share/applications/{}
+fi
+
 
 #
 # Services
