@@ -10,6 +10,7 @@ PKGS=(
     # Utilities
     'accountsservice'           # Query and manipulate user accounts
     'apparmor'                  # Userspace tools and libraries to control AppArmor
+    'acpi_call-dkms'            # Enables calls to ACPI methods through /proc/acpi/call
     'bash-completion'           # Tab completion for Bash
     'htop'                      # Interactive process viewer
     'jq'                        # Command-line JSON processor

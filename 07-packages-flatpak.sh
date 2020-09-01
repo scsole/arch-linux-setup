@@ -9,6 +9,7 @@ PKGS=(
     'com.valvesoftware.Steam'
     'org.videolan.VLC'
     'org.freecadweb.FreeCAD'
+    'com.obsproject.Studio'
     'us.zoom.Zoom'
 )
 
