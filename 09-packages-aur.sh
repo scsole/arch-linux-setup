@@ -26,7 +26,6 @@ PKGS=(
     'enpass-bin'                # Multiplatform password manager
 
     # Development
-    'android-studio'            # The official Android IDE
     'insomnia'                  # HTTP and GraphQL client
 
     # Themes

@@ -89,11 +89,6 @@ if command -v pulseeffects &> /dev/null; then
     find /usr -name "*lsp_plug*desktop" 2>/dev/null | cut -f 5 -d '/' | xargs -I {} cp /tmp/hidden ~/.local/share/applications/{}
 fi
 
-# Configre makepkg
-sudo tee /etc/makepkg.conf <<EOF
-MAKEFLAGS="-j$(nproc)"
-EOF
-
 
 #
 # Services

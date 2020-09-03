@@ -26,9 +26,10 @@ PKGS=(
     'zip'                       # Create and modify zip files
     'unzip'                     # Extract and view files in .zip archives
     'unrar'                     # The RAR uncompression program
+    'pigz'                      # Parralel implementation of gzip
+    'pbzip2'                    # Parallel implementation of bzip2
     'fwupd'                     # Allows session software to update firmware
     'usbutils'                  # USB Device Utilities
-    'fprintd'                   # Service to access fingerprint readers
     'playerctl'                 # Media player controller for various players
 
     # Storage Drivers / Utilities
@@ -76,7 +77,6 @@ PKGS=(
 
     # Network and Internet
     'firefox'                   # Mozilla's Web browser
-    'filezilla'                 # FTP, FTPS, and SFTP Client
     'transmission-gtk'          # BitTorrent client
     'signal-desktop'            # Signal private messaging
     'telegram-desktop'          # Official Telegram Desktop client
@@ -84,7 +84,6 @@ PKGS=(
     #'kget'                      # Download Manager
 
     # Applications
-    'blender'                   # 3D graphics creation suite
     'kicad'                     # Electronic schematic and PCB design tools
     'kicad-library'             # Kicad component and footprint libraries
     'kicad-library-3d'          # Kicad 3D render model libraries
@@ -143,6 +142,7 @@ if [ $LAPTOP == true ]; then
         'tlp'                       # Linux Advanced Power Management
         'tlp-rdw'                   # TLP - Radio Device Wizard
         # 'thermald'                  # Daemon to prevent overheating
+        'fprintd'                   # Service to access fingerprint readers
     )
 fi
 

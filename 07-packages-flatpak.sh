@@ -5,11 +5,14 @@
 #
 
 PKGS=(
+    'com.google.AndroidStudio'
     'com.microsoft.Teams'
     'com.valvesoftware.Steam'
+    'com.obsproject.Studio'
+    'org.blender.Blender'
     'org.videolan.VLC'
     'org.freecadweb.FreeCAD'
-    'com.obsproject.Studio'
+    'org.filezillaproject.Filezilla'
     'us.zoom.Zoom'
 )
 
