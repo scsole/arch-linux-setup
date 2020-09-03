@@ -14,6 +14,7 @@ PKGS=(
     'slurp'                     # Select a region in Wayland compositors
     'mako'                      # Lightweight notification daemon for Wayland
     'waybar'                    # Highly customizable Wayland bar for Sway
+    'gammastep'                 # Shift the screen colour temperature
 )
 
 printf "\n Installing Sway packages\n\n"

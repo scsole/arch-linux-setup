@@ -20,7 +20,6 @@ PKGS=(
     # Utilities
     'corrupter-bin'             # Simple image glitcher for nice looking lockscreen backgrounds
     'starship-bin'              # A super awesome prompt
-    'gammastep'                 # Adjusts the color temperature of your screen
 
     # General
     'enpass-bin'                # Multiplatform password manager
