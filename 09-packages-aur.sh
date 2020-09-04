@@ -20,6 +20,7 @@ PKGS=(
     # Utilities
     'corrupter-bin'             # Simple image glitcher for nice looking lockscreen backgrounds
     'starship-bin'              # A super awesome prompt
+    'swaylock-effects-git'      # A fancier screen locker for Wayland
 
     # General
     'enpass-bin'                # Multiplatform password manager
