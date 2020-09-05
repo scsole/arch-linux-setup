@@ -7,8 +7,8 @@
 PKGS=(
     'com.google.AndroidStudio'
     'com.microsoft.Teams'
-    'com.valvesoftware.Steam'
     'com.obsproject.Studio'
+    # 'com.valvesoftware.Steam'
     'org.blender.Blender'
     'org.videolan.VLC'
     'org.freecadweb.FreeCAD'
