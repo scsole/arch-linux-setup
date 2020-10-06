@@ -64,6 +64,8 @@ PKGS=(
     'virtualbox-host-dkms'      # Virtualbox host kernel modules
     'vagrant'                   # Manage and configure virtualised environments
     'sqlitebrowser'             # SQLite Database browser
+    'php'                       # Scripting language suited to web development
+    'mitmproxy'                 # SSL-capable man-in-the-middle HTTP proxy
 
     # Productivity
     'hunspell'                  # Spellchecker
