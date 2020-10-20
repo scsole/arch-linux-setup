@@ -27,6 +27,7 @@ PKGS=(
 
     # Development
     'insomnia'                  # HTTP and GraphQL client
+    'kicad-templates'           # KiCad templates
 
     # Themes
     'adwaita-qt'                # Native adwaita theme for Qt applications

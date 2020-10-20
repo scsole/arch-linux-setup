@@ -53,7 +53,7 @@ PKGS=(
     'flatpak'                   # A tool for package distribution
     'git'                       # Distributed version control system
     'git-lfs'                   # Git Large File Storage extension
-    'jdk11-openjdk'             # Java development kit 11
+    'jdk-openjdk'               # Java development kit 14
     'python'                    # Python scripting language
     'python-pip'                # Tool for installing Python packages
     'ruby'                      # Ruby programming language
@@ -63,6 +63,7 @@ PKGS=(
     'virtualbox'                # Virtualization software
     'virtualbox-host-dkms'      # Virtualbox host kernel modules
     'vagrant'                   # Manage and configure virtualised environments
+    'aws-cli'                   # Command Line Interface for Amazon Web Services
     'sqlitebrowser'             # SQLite Database browser
     'php'                       # Scripting language suited to web development
     'mitmproxy'                 # SSL-capable man-in-the-middle HTTP proxy
