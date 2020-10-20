@@ -22,6 +22,11 @@ sudo systemctl enable systemd-swap
 # Load all AppArmor profiles on startup
 sudo systemctl enable apparmor.service
 
+# Increase the number of allowed inotify subscriptions for non-root users
+sudo tee /etc/sysctl.d/40-max-user-watches.conf <<EOF
+fs.inotify.max_user_watches=524288
+EOF
+
 
 #
 # Power management
@@ -48,7 +53,7 @@ fi
 # User permissions
 #
 
-# sudo usermod -aG lock $USER         # Required for Arduino IDE
+sudo usermod -aG lock $USER         # Required for Arduino IDE
 sudo usermod -aG uucp $USER         # Access serial devices
 sudo usermod -aG input $USER        # Required for libinput gestures and fingerprint sensor
 sudo usermod -aG video $USER        # Set backlight without root
