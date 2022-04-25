@@ -1,3 +1,5 @@
+> **UNMAINTAINED**: Continue at your own risk!
+
 # Automated Arch Linux Post-installation
 
 My Arch Linux post-installation setup scripts.
